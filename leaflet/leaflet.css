@@ -638,3 +638,8 @@ svg.leaflet-image-layer.leaflet-interactive path {
 	margin-left: -12px;
 	border-right-color: #fff;
 	}
+.infoHeader{
+	color: #38f;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px
+}
