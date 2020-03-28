@@ -1,0 +1,63 @@
+{
+  "type": "FeatureCollection",
+  "features": 
+  [
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Red",
+          "iconClass": "Drop",
+          "iconUrl": "//static.osm.ch/umap/uploads/pictogram/Erste_Hilfe_CWJBWPs.png"
+        },
+        "name": "KUSPO Münchenstein",
+        "description": "https://www.muenchenstein.ch/\n"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.616621,
+          47.520466
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Red",
+          "iconClass": "Drop",
+          "iconUrl": "//static.osm.ch/umap/uploads/pictogram/Erste_Hilfe_CWJBWPs.png"
+        },
+        "name": "Mehrzweckhalle Stutz",
+        "description": "https://www.lausen.ch/de/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.764561,
+          47.473004
+        ]
+      }
+    }
+    {
+      "type": "Feature",
+      "properties": {
+        "_umap_options": {
+          "color": "Red",
+          "iconClass": "Drop",
+          "iconUrl": "//static.osm.ch/umap/uploads/pictogram/Erste_Hilfe_CWJBWPs.png"
+        },
+        "name": "University Children's Hospital Basel – UKBB",
+        "description": "https://www.ukbb.ch/"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.581703,
+          47.563631
+        ]
+      }
+    }
+  ]
+}
