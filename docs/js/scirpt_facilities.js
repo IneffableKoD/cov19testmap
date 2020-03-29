@@ -33,10 +33,25 @@ functionn infoPopup (feature, layer) {
 
 };
 
+ var onEachFeature = function(feature, layer) {
+        popUpFeature(feature, layer);
+        layer.on({
+            mouseover:highlightFeature,
+            mouseout:resetHighlight,
+            click: zoomToFeature
+        });
+    }
+
 */
+
+function zoomToFeature(evt) {
+    fitBounds(evt.target.getBounds());
+}
 
 L.geoJSON(testSitesCHE,{
 
     //onEachFeature: infoPopup
+    onEachFuture (feature, layer) {}
+
         
 }).addTo(map);
