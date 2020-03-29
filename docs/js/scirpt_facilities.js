@@ -52,7 +52,7 @@ L.geoJSON(testSitesCHE,{
         
 }).addTo(map);
 
-var facilityIcon = L.icon({
+var facilityIcon = new L.icon({
     iconUrl: 'img/facilityicon.png',
     iconSize: [16, 16],
     /*
