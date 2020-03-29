@@ -60,6 +60,26 @@
           47.47298195871847
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#1543c5",
+        "marker-size": "medium",
+        "marker-symbol": "hospital",
+        "Name": "Kantonsschule Alpenquai",
+        "Address": "Alpenquai 46-50, 6005 Luzern",
+        "Contact": "-",
+        "Web": "https://www.pilatustoday.ch/coronavirus/drive-in-coronavirus-tests-im-kanton-luzern-137330917",
+        "Comment": "Drive-in test, only by doctors appointement."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          8.321768045425415,
+          47.043969390128844
+        ]
+      }
     }
   ]
 }
