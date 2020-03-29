@@ -12,19 +12,32 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       }).addTo(map);
 
 /*
-var testFacilityIcon = L.icon({
-    iconUrl: 'img/Icon_Testing_Facility_C.png',
-    iconSize: [16, 16],
-    //iconAnchor: [null],
-    //popupAnchor: [0, 0],
-    //shadowUrl: '_',
-    //shadowSize: [null],
-    //shadowAnchor: [22, 94]
-});
-L.marker([50.505, 30.57], {icon: myIcon}).addTo(map);
-*/
+ * Create a custom icon to use with a GeoJSON layer instead of the default blue
+ * marker. This snippet assumes the map object (map) and GeoJSON object
+ * (myLayerData) have already been declared.
+ */
 
-/*
+// replace Leaflet's default blue marker with a custom icon
+function createCustomIcon (feature, latlng) {
+    let myIcon = L.icon({
+      iconUrl: 'img/facilityIcon.png',
+      /*
+      shadowUrl: 'my-icon.png',
+      iconSize:     [16, 16], // width and height of the image in pixels
+      shadowSize:   [35, 20], // width, height of optional shadow image
+      iconAnchor:   [12, 12], // point of the icon which will correspond to marker's location
+      shadowAnchor: [12, 6],  // anchor point of the shadow. should be offset
+      popupAnchor:  [0, 0] // point from which the popup should open relative to the iconAnchor
+      */
+    })
+    return L.marker(latlng, { icon: myIcon })
+  }
+  
+  // create an options object that specifies which function will called on each feature
+  let myLayerOptions = {
+    pointToLayer: createCustomIcon
+  }
+  
 
 functionn infoPopup (feature, layer) {
     layer.bindPopup("<h1 class='infoHeader'>Testing Facility Info</h1>
