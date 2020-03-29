@@ -51,3 +51,15 @@ L.geoJSON(testSitesCHE,{
 
         
 }).addTo(map);
+
+var facilityIcon = L.icon({
+    iconUrl: 'img/facilityicon.png',
+    iconSize: [16, 16],
+    /*
+    iconAnchor: [22, 94],
+    popupAnchor: [-3, -76],
+    shadowUrl: 'my-icon-shadow.png',
+    shadowSize: [68, 95],
+    shadowAnchor: [22, 94]
+    */
+});
