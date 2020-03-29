@@ -40,7 +40,7 @@
       // Leaflet Map
 	var map = L.map('map', {
     	center: [0, 0], 
-    	zoom: 12,  // 1-18
+    	zoom: 6,  // 1-18
     	scrollWheelZoom: true
 		  });
 		  
@@ -64,8 +64,8 @@
       // show the scale bar on the lower left corner
       L.control.scale().addTo(map);
 
-      // show a marker on the map
-      //L.marker({lon: 0, lat: 0,}).bindPopup('The center of the world').addTo(map);
+      //show a marker on the map
+      L.marker({lon: 0, lat: 0,}).bindPopup('The center of the world').addTo(map);
     </script>
   </body>
 </html>
