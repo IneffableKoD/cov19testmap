@@ -49,12 +49,18 @@ function createCustomIcon (feature, latlng) {
   
   */
 
+/*  
+
 functionn infoPopup (feature, layer) {
     layer.bindPopup("<h1 class='infoHeader'>Testing Facility Info</h1>
     <p class='infoHeader'>" + feature.properties.adress +"</p>");
     layer.setIcon(testFacilityIcon);
 
 };
+
+*/
+
+/*
 
  var onEachFeature = function(feature, layer) {
         popUpFeature(feature, layer);
