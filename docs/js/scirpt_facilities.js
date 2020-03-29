@@ -33,11 +33,14 @@ function createCustomIcon (feature, latlng) {
     return L.marker(latlng, { icon: myIcon })
   }
   
+  /*
+
   // create an options object that specifies which function will called on each feature
   let myLayerOptions = {
     pointToLayer: createCustomIcon
   }
   
+  */
 
 functionn infoPopup (feature, layer) {
     layer.bindPopup("<h1 class='infoHeader'>Testing Facility Info</h1>
