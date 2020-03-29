@@ -22,7 +22,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 // replace Leaflet's default blue marker with a custom icon
 function createCustomIcon (feature, latlng) {
     let myIcon = L.icon({
-      iconUrl: '../img/facilityIcon.png',
+      iconUrl: 'img/facilityIcon.png',
 
 
       /*
