@@ -40,12 +40,12 @@
       // Leaflet Map
 	var map = L.map('map', {
     	center: [0, 0], 
-    	zoom: 6,  // 1-18
+    	zoom: 3,  // 1-18
     	scrollWheelZoom: true
 		  });
 		  
 	  // set icon
-	var myIcon = L.icon({
+	var testFacilitIcon = L.icon({
     	iconUrl: '/img/Icon_Testing_Facility_C.png',
     	iconSize: [16, 16],
     	//iconAnchor: [22, 94],
@@ -65,7 +65,7 @@
       L.control.scale().addTo(map);
 
       //show a marker on the map
-      L.marker({lon: 0, lat: 0,}).bindPopup('The center of the world').addTo(map);
+      L.marker([0, 0], { icon: testFacilitIcon }).bindPopup('The center of the world').addTo(map);
     </script>
   </body>
 </html>
