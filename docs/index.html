@@ -36,12 +36,7 @@
 	
     <script>
 
-      // Leaflet Map
-	var map = L.map('map', {
-    	center: [46.8182, 8.2275], 
-    	zoom: 5,  // 1-18
-    	scrollWheelZoom: true
-		  });
+    /*
 		  
 	  // set icon
 	var testIcon = L.icon({
@@ -55,18 +50,14 @@
 		});
 
 	  // add the OpenStreetMap tiles
-      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        maxZoom: 19,
-        attribution: '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap contributors</a>'
-      }).addTo(map);
-
+     
+	*/
       // show the scale bar on the lower left corner
       L.control.scale().addTo(map);
 
-	  // add GeoJSON
-	  L.geoJSON('docs/js/test_sites_CHE.geojson').addTo(map);
+	</script>
+	<script src="js/test_sites_CHE.js"></script>
+	<script src="js/scirpt_facilities.js"></script>
 
-
-    </script>
-  </body>
+   </body>
 </html>
