@@ -23,7 +23,18 @@
     <div id="map"></div>
     <script>
       // initialize Leaflet
-      var map = L.map('map').setView({lon: 0, lat: 0}, 2);
+      const map = L.map('map').setView({lon: 0, lat: 0}, 2 );
+
+	  var testFacilityIcon = 
+			L.icon({
+    		iconUrl: '../img/Icon_Testing_Facility_C.png',
+    		iconSize: [16, 16],
+    		//iconAnchor: [null],
+    		popupAnchor: [0, 0],
+    		//shadowUrl: '_',
+    		//shadowSize: [null],
+    		//shadowAnchor: [22, 94]
+		});
 
       // add the OpenStreetMap tiles
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
