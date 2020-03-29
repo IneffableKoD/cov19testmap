@@ -17,10 +17,14 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
  * (myLayerData) have already been declared.
  */
 
+/*
+
 // replace Leaflet's default blue marker with a custom icon
 function createCustomIcon (feature, latlng) {
     let myIcon = L.icon({
       iconUrl: 'img/facilityIcon.png',
+
+
       /*
       shadowUrl: 'my-icon.png',
       iconSize:     [16, 16], // width and height of the image in pixels
@@ -29,10 +33,13 @@ function createCustomIcon (feature, latlng) {
       shadowAnchor: [12, 6],  // anchor point of the shadow. should be offset
       popupAnchor:  [0, 0] // point from which the popup should open relative to the iconAnchor
       */
+
+/*      
     })
     return L.marker(latlng, { icon: myIcon })
   }
-  
+
+*/  
   /*
 
   // create an options object that specifies which function will called on each feature
