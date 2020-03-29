@@ -40,14 +40,14 @@ function createCustomIcon (feature, latlng) {
   }
 
   
-  /*
+  
 
   // create an options object that specifies which function will called on each feature
   let myLayerOptions = {
     pointToLayer: createCustomIcon
   }
   
-  */
+  
 
 /*  
 
