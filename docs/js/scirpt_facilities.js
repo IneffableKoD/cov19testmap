@@ -24,7 +24,7 @@ var testFacilityIcon = L.icon({
 L.marker([50.505, 30.57], {icon: myIcon}).addTo(map);
 */
 
-
+/*
 
 functionn infoPopup (feature, layer) {
     layer.bindPopup("<h1 class='infoHeader'>Testing Facility Info</h1>
@@ -33,7 +33,7 @@ functionn infoPopup (feature, layer) {
 
 };
 
-
+*/
 
 L.geoJSON(testSitesCHE,{
 
