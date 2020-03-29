@@ -37,6 +37,6 @@ functionn infoPopup (feature, layer) {
 
 L.geoJSON(testSitesCHE,{
 
-    onEachFeature: infoPopup
+    //onEachFeature: infoPopup
         
 }).addTo(map);
