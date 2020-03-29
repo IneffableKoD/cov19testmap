@@ -11,7 +11,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://openstreetmap.org/copyright">OpenStreetMap contributors</a>'
       }).addTo(map);
 
-
+/*
 var testFacilityIcon = L.icon({
     iconUrl: 'img/Icon_Testing_Facility_C.png',
     iconSize: [16, 16],
@@ -22,12 +22,13 @@ var testFacilityIcon = L.icon({
     //shadowAnchor: [22, 94]
 });
 L.marker([50.505, 30.57], {icon: myIcon}).addTo(map);
-
+*/
 
 
 
 functionn infoPopup (feature, layer) {
-    layer.bindPopup("<h1 class='infoHeader'>Testing Facility Info</h1><p class='infoHeader'>" + feature.properties.adress +"</p>");
+    layer.bindPopup("<h1 class='infoHeader'>Testing Facility Info</h1>
+    <p class='infoHeader'>" + feature.properties.adress +"</p>");
     layer.setIcon(testFacilityIcon);
 
 };
