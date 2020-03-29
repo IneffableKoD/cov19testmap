@@ -1,9 +1,10 @@
 <!DOCTYPE HTML>
 <html lang="en">
   <head>
+	<title>COVID-19 Testing Facilities</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <script src="js/scirpt_blank.js"></script>
+    <script src="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.js"></script>
     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet/v0.7.7/leaflet.css" />
     <style>
       html, body {
@@ -22,7 +23,7 @@
     <div id="map"></div>
     <script>
       // initialize Leaflet
-      var map = L.map('map').setView({lon: 0, lat: 0}, 2);
+      var map = L.map('map').setView({lon: 0, lat: 0}, 10);
 
       // add the OpenStreetMap tiles
       L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
