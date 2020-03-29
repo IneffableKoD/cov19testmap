@@ -17,6 +17,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
  * (myLayerData) have already been declared.
  */
 
+ //Custom icon dos not work 200329 Ineff
 
 
 // replace Leaflet's default blue marker with a custom icon
@@ -40,14 +41,14 @@ function createCustomIcon (feature, latlng) {
   }
 
   
-  
+  /*
 
   // create an options object that specifies which function will called on each feature
   let myLayerOptions = {
     pointToLayer: createCustomIcon
   }
   
-  
+  /*
 
 /*  
 
