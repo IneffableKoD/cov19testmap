@@ -44,10 +44,6 @@ functionn infoPopup (feature, layer) {
 
 */
 
-function zoomToFeature(evt) {
-    fitBounds(evt.target.getBounds());
-}
-
 L.geoJSON(testSitesCHE,{
 
     //onEachFeature: infoPopup
