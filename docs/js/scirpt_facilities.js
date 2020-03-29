@@ -25,14 +25,14 @@ function createCustomIcon (feature, latlng) {
       iconUrl: 'img/facilityIcon.png',
 
 
-      /*
-      shadowUrl: 'my-icon.png',
+      
+      //shadowUrl: 'my-icon.png',
       iconSize:     [16, 16], // width and height of the image in pixels
-      shadowSize:   [35, 20], // width, height of optional shadow image
-      iconAnchor:   [12, 12], // point of the icon which will correspond to marker's location
-      shadowAnchor: [12, 6],  // anchor point of the shadow. should be offset
-      popupAnchor:  [0, 0] // point from which the popup should open relative to the iconAnchor
-      */
+      //shadowSize:   [35, 20], // width, height of optional shadow image
+      //iconAnchor:   [12, 12], // point of the icon which will correspond to marker's location
+      //shadowAnchor: [12, 6],  // anchor point of the shadow. should be offset
+      //popupAnchor:  [0, 0] // point from which the popup should open relative to the iconAnchor
+    
 
      
     })
