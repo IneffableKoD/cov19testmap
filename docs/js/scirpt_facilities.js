@@ -82,4 +82,10 @@ L.geoJSON(testSitesCHE,{
         
 }).addTo(map);
 
+L.geoJSON(testSitesFRA,{
 
+    //onEachFeature: infoPopup
+    onEachFuture (feature, layer) {}
+
+        
+}).addTo(map);
