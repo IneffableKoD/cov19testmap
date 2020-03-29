@@ -12,7 +12,7 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       }).addTo(map);
 
 
-var testFacilityIcon = new
+var testFacilityIcon = 
 L.icon({
     iconUrl: 'img/Icon_Testing_Facility_C.png',
     iconSize: [16, 16],
