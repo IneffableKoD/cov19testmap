@@ -80,6 +80,26 @@
           47.043969390128844
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "marker-color": "#1543c5",
+        "marker-size": "medium",
+        "marker-symbol": "hospital",
+        "Name": "Universitätsspital Basel",
+        "Address": "Totentanz 19, 4051 Basel",
+        "Contact": "+41 61 265 25 25",
+        "Web": "https://www.unispital-basel.ch/patienten-besucher/notfall/coronavirus/",
+        "Comment": "Test in church next to the hospital."
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          7.58531391620636,
+          47.56155957873434
+        ]
+      }
     }
   ]
 }
