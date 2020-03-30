@@ -1,5 +1,3 @@
-
-
 # CEVEN.hack Contribution to #CodevsCOVID19 Hackathon
 
 ## A COVID-19 Testing Facilities Map
@@ -62,30 +60,20 @@ Thanks and shoutouts to:
 
 ## TO-DO
 
-| Status                        | Task |                                Who |
-
-|---|                               ---                              | --- |
-
-| 0 | Update README.md                                              | Ineff |
-
-| 1 | Add custom icon to map                                        | Ineff |
-
-| 0 | Make website in popup hyperlink                               | Ineff |
-
-| 0 | Add layer "unverified"                                        | Ineff |
-
-| 0 | Add layer selection on map                                    | Ineff |
-
-| 0 | Add German Hospitals (unverifieed)                            | Ineff |
-
-| 0 | Add Austrian Hospitals (unverifieed)                          | Ineff |
-
-| 0 | Add Credits (| Ineff |
-
-| 0 | Add option to measure ranges / draw too (update links)        | Ineff |
+| Status | Task                            | Who   |
+| ------ | ------------------------------- | ----- |
+| 0      | Update README.md                |       |
+| 0      | Make website in popup hyperlink |       |
+| 0      | Add layer "unverified"          |       |
+| 0      | Add layer selection on map      |       |
+| 1      | Add Credits                     | Ineff |
+| 0      | Add all Swiss facilities        |       |
+| 0      | Add other facilities            |       |
 
 ## Ressources 
 
 Custom Leaflet L.Control control https://jsfiddle.net/TomazicM/rqu3nvLj/
+
+------
 
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/H2H21K2BH)
