@@ -70,7 +70,7 @@ Thanks and shoutouts to:
 | 0      | Add all Swiss facilities        |       |
 | 0      | Add other facilities            |       |
 
-## Ressources 
+## Resources 
 
 Custom Leaflet L.Control control https://jsfiddle.net/TomazicM/rqu3nvLj/
 
