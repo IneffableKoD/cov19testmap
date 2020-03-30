@@ -89,7 +89,15 @@ The oversimplified versioin is to prove the point of the mapping purpose.
 
             var map = L.map('map').setView([46.8182, 8.2275], 8);
 
-            var drawnItems = new L.FeatureGroup();
+            mapLink =
+                '<a href="http://openstreetmap.org">OpenStreetMap</a>';
+            L.tileLayer(
+                'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; ' + mapLink + ' Contributors',
+                    maxZoom: 18,
+                }).addTo(map);
+
+                var drawnItems = new L.FeatureGroup();
             map.addLayer(drawnItems);
 
             var drawControl = new L.Control.Draw({
@@ -104,14 +112,6 @@ The oversimplified versioin is to prove the point of the mapping purpose.
                     layer = e.layer;
                 drawnItems.addLayer(layer);
             });
-
-            mapLink =
-                '<a href="http://openstreetmap.org">OpenStreetMap</a>';
-            L.tileLayer(
-                'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                    attribution: '&copy; ' + mapLink + ' Contributors',
-                    maxZoom: 18,
-                }).addTo(map);
 
             L.Control.Info = L.Control.extend({
 
