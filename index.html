@@ -33,20 +33,16 @@ The oversimplified versioin is to prove the point of the mapping purpose.
                 crossorigin=""></script>
         <script>
 
-        var testIcon = L.Icon.extend({
-		options: {
-			//shadowUrl: 'leaf-shadow.png',
-			iconSize:     [16, 16],
-			//shadowSize:   [50, 64],
-			iconAnchor:   [22, 94],
-			//shadowAnchor: [4, 62],
-			popupAnchor:  [-3, -76]
-		    }
-	    });
+                var testIcon = L.icon({
+                 iconUrl: 'img/facilityicon.png',
+                 //shadowUrl: 'iconshadow.png',
 
-	    var standardIcon = new testIcon({iconUrl: 'img/facilityicon.png'}),
-	
-
+                 iconSize:     [16, 16],   // size of the icon
+                 //shadowSize:   [50, 64], // size of the shadow
+                 //iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+                 //shadowAnchor: [4, 62],  // the same for the shadow
+                 //popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+                  });
 
                 var testSites = [
 	        	["UKBB",47.56356134342556,7.581703662872314],
@@ -70,7 +66,7 @@ The oversimplified versioin is to prove the point of the mapping purpose.
 		        }
 
                 var marker = L.marker([46.8182, 8.2275],
-                {icon: standardIcon},
+                {icon: testIcon},
                 {title: 'Center of Switzerland'}
                 )
                 .addTo(map)
