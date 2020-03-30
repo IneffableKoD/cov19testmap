@@ -32,6 +32,13 @@ The oversimplified versioin is to prove the point of the mapping purpose.
                 integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
                 crossorigin=""></script>
         <script>
+
+                var testSites = [
+	        	["UKBB",47.56356134342556,7.581703662872314],
+	        	["KUSPO Münchenstein",47.5204177883841,7.616620659828186],
+	            	];
+
+
             var map = L.map('map').setView([46.8182, 8.2275], 8);
             mapLink = 
                 '<a href="http://openstreetmap.org">OpenStreetMap</a>';
@@ -40,6 +47,12 @@ The oversimplified versioin is to prove the point of the mapping purpose.
                 attribution: '&copy; ' + mapLink + ' Contributors',
                 maxZoom: 18,
                 }).addTo(map);
+
+                for (var i = 0; i < testSites.length; i++) {
+			    marker = new L.marker([testSites[i][1],testSites[i][2]])
+				.bindPopup(testSites[i][0])
+				.addTo(map);
+		        }
 
                 var marker = L.marker([46.8182, 8.2275],
                 {title: 'Center of Switzerland'}
