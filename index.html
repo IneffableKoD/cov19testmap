@@ -1,0 +1,68 @@
+<!--- This version of the map is a workaround implementation for demo purposes
+The oversimplified versioin is to prove the point of the mapping purpose.
+/docs holds the actual prototype that we've been working on.
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>COVID-19 Testing Facilities</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+	integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+	crossorigin=""/>
+	<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+   integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+   crossorigin=""></script>	
+   
+    <style>
+            html, body {
+              height: 100%;
+              padding: 0;
+              margin: 0;
+            }
+            #map {
+              /* configure the size of the map */
+              width: 100%;
+              height: 100%;
+            }
+            
+     </style>
+
+</head>
+<body>
+    <script src="leaflet.js"></script>
+
+    <script>
+
+	var planes = [
+		["7C6B07",-40.99497,174.50808],
+		["7C6B38",-41.30269,173.63696],
+		["7C6CA1",-41.49413,173.5421],
+		["7C6CA2",-40.98585,174.50659],
+		["C81D9D",-40.93163,173.81726],
+		["C82009",-41.5183,174.78081],
+		["C82081",-41.42079,173.5783],
+		["C820AB",-42.08414,173.96632],
+		["C820B6",-41.51285,173.53274]
+		];
+
+        var map = L.map('map').setView([-41.3058, 174.82082], 8);
+        mapLink = 
+            '<a href="http://openstreetmap.org">OpenStreetMap</a>';
+        L.tileLayer(
+            'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; ' + mapLink + ' Contributors',
+            maxZoom: 18,
+            }).addTo(map);
+
+		for (var i = 0; i < planes.length; i++) {
+			marker = new L.marker([planes[i][1],planes[i][2]])
+				.bindPopup(planes[i][0])
+				.addTo(map);
+		}
+               
+    </script>
+</body>
+</html>
