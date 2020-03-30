@@ -11,7 +11,9 @@ The oversimplified versioin is to prove the point of the mapping purpose.
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
         integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
         crossorigin="" />
-    <link rel="stylesheet" href="http://leaflet.github.io/Leaflet.draw/leaflet.draw.css" />
+    <!-- TO-DO: insert draw tool
+        <link rel="stylesheet" href="http://leaflet.github.io/Leaflet.draw/leaflet.draw.css" /
+    -->
 
     <style>
         body {
@@ -54,7 +56,7 @@ The oversimplified versioin is to prove the point of the mapping purpose.
     <div id="map"></div>
     <div style="float: right; margin-top:6pt;">
 
-        <!---
+        <!--- 
             <button onclick="changeText();">Change text</button> 
             <button onclick="changeStyle();">Change style</button>
         -->
@@ -100,6 +102,7 @@ The oversimplified versioin is to prove the point of the mapping purpose.
                 var drawnItems = new L.FeatureGroup();
             map.addLayer(drawnItems);
 
+            /* TO-DO: insert draw tool
             var drawControl = new L.Control.Draw({
                 edit: {
                     featureGroup: drawnItems
@@ -112,6 +115,7 @@ The oversimplified versioin is to prove the point of the mapping purpose.
                     layer = e.layer;
                 drawnItems.addLayer(layer);
             });
+            */
 
             L.Control.Info = L.Control.extend({
 
