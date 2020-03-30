@@ -42,7 +42,9 @@ The oversimplified versioin is to prove the point of the mapping purpose.
                 }).addTo(map);
 
                 var marker = L.marker([46.8182, 8.2275])
-            .addTo(map);
+                .addTo(map)
+                .bindPopup("<b>Te Papa</b><br>Museum of New Zealand.")
+                .openPopup();
     
       </script>
     </body>
