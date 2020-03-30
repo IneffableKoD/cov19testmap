@@ -8,6 +8,7 @@
 | Devpost link        | https://devpost.com/software/cov19testmap/                   |
 | GitHub link         | https://github.com/IneffableKoD/cov19testmap                 |
 | Product demo        | http://ineff.ch/cov19testmap/                                |
+| Demo video          | https://www.youtube.com/watch?v=6Rj032PXzMc                  |
 | Subject area        | 0020_Corona test processes/ diagnosis                        |
 | Beneficiary         | #CodevsCOVID19 Hackathon                                     |
 | Team members        | IneffableKoD aka FY Zehnder                                  |
