@@ -4,216 +4,290 @@ The oversimplified versioin is to prove the point of the mapping purpose.
 -->
 <!DOCTYPE html>
 <html>
-    <head>
-                <title>COVID-19 Testing Facilitiees</title>
-                <meta charset="utf-8" />
-                <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
-                      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-                      crossorigin=""/>
 
-                <style>
-                            body {
-                                padding: 0;
-                                margin: 0;
-                            }
-                            html, body, #map {
-                                height: 100%;
-                                width: 100%;
-                            }
-                </style>
-                    
-    </head>
+<head>
+    <title>COVID-19 Testing Facilitiees</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+        integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+        crossorigin="" />
 
-    <body>
-        
-        <div id="map"></div>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+        }
+
+        html,
+        body,
+        #map {
+            height: 100%;
+            width: 100%;
+        }
+
+        .titleStyle1 {
+            color: #30608F;
+            font-weight: bold;
+            background-color: rgba(245, 245, 245, 0.8);
+        }
+
+        .contentStyle1 {
+            background-color: rgba(245, 245, 245, 0.8);
+        }
+
+        .titleStyle2 {
+            font-weight: bold;
+            background-color: #F0FFF0;
+        }
+
+        .contentStyle2 {
+            background-color: #FFFFE8;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="map"></div>
+    <div style="float: right; margin-top:6pt;">
+        <button onclick="changeText();">Change text</button>
+        <button onclick="changeStyle();">Change style</button>
 
         <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
-                integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
-                crossorigin=""></script>
+            integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+            crossorigin=""></script>
         <script>
 
-                var testIcon = L.icon({
-                 iconUrl: 'facilityicon.png',
-                 //shadowUrl: 'iconshadow.png',
-                 iconSize:     [32, 32],   // size of the icon
-                 //shadowSize:   [50, 64], // size of the shadow
-                 //iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
-                 //shadowAnchor: [4, 62],  // the same for the shadow
-                 //popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
-                  });
+            var testIcon = L.icon({
+                iconUrl: 'facilityicon.png',
+                //shadowUrl: 'iconshadow.png',
+                iconSize: [32, 32],   // size of the icon
+                //shadowSize:   [50, 64], // size of the shadow
+                //iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+                //shadowAnchor: [4, 62],  // the same for the shadow
+                //popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+            });
 
-                var testSites = [
-	        	["<h1>UKBB</h1><br>Spitalstrasse 33, 4056 Basel, Switzerland<br>+41 61 704 12 12<br>https://www.ukbb.ch/<br><br><b>Only kids younger than 16 are tested</b>",47.56356134342556,7.581703662872314],
-                ["<h1>KUSPO Münchenstein</h1><br>Loogstrasse 2, 4142 Münchenstein, Switzerland<br>-<br>-<br><br><b>Open 08.00-20.00</b>",47.5204177883841,7.616620659828186],
-                ["<h1>Mehrzweckhalle Stutz</h1><br>Stutzstrasse 1, 4415 Lausen, Switzerland<br>-<br>-<br><br><b>Open 24/7</b>",47.47298195871847,7.764571309089661],
-                ["<h1>Kantonsschule Alpenquai</h1><br>Alpenquai 46-50, 6005 Luzern, Switzerland<br>-<br>Source: https://www.pilatustoday.ch/coronavirus/drive-in-coronavirus-tests-im-kanton-luzern-137330917<br><br><b>Drive-in test, only by doctors appointement.</b>",47.043969390128844,8.321768045425415],
+            var testSites = [
+                ["<h1>UKBB</h1><br>Spitalstrasse 33, 4056 Basel, Switzerland<br>+41 61 704 12 12<br>https://www.ukbb.ch/<br><br><b>Only kids younger than 16 are tested</b>", 47.56356134342556, 7.581703662872314],
+                ["<h1>KUSPO Münchenstein</h1><br>Loogstrasse 2, 4142 Münchenstein, Switzerland<br>-<br>-<br><br><b>Open 08.00-20.00</b>", 47.5204177883841, 7.616620659828186],
+                ["<h1>Mehrzweckhalle Stutz</h1><br>Stutzstrasse 1, 4415 Lausen, Switzerland<br>-<br>-<br><br><b>Open 24/7</b>", 47.47298195871847, 7.764571309089661],
+                ["<h1>Kantonsschule Alpenquai</h1><br>Alpenquai 46-50, 6005 Luzern, Switzerland<br>-<br>Source: https://www.pilatustoday.ch/coronavirus/drive-in-coronavirus-tests-im-kanton-luzern-137330917<br><br><b>Drive-in test, only by doctors appointement.</b>", 47.043969390128844, 8.321768045425415],
 
                 //["<h1>Title</h1><br>Street Nr, ZIP City, Country<br>Phone<br>Website<br><br><b>Comment</b>",Latitude,Longitude],
-	            	];
+            ];
 
 
             var map = L.map('map').setView([46.8182, 8.2275], 8);
-            mapLink = 
+            mapLink =
                 '<a href="http://openstreetmap.org">OpenStreetMap</a>';
             L.tileLayer(
                 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                attribution: '&copy; ' + mapLink + ' Contributors',
-                maxZoom: 18,
+                    attribution: '&copy; ' + mapLink + ' Contributors',
+                    maxZoom: 18,
                 }).addTo(map);
 
-                for (var i = 0; i < testSites.length; i++) {
-                marker = new L.marker([testSites[i][1],testSites[i][2]],
-                {icon: testIcon},
-                {opacity: 0.5}
+            L.Control.Info = L.Control.extend({
+
+                options: {
+                    title: 'Info',
+                    titleTooltip: 'Click here for more info',
+                    content: '',
+                    maxWidth: '250px',
+                    titleClass: '',
+                    contentClass: ''
+                },
+
+                initialize: function (options) {
+                    L.Util.setOptions(this, options);
+                    this._infoContainer = null;
+                    this._infoTitleContainer = null;
+                    this._infoBodyContainer = null;
+                    this._infoCloseButtonContainer = null;
+                    this._infoContentContainer = null;
+                    this._infoTitle = this.options.title;
+                    this._infoTitleTooltip = this.options.titleTooltip;
+                    this._infoContent = this.options.content;
+                    this._titleShown = false;
+                    this._titleClass = this.options.titleClass;
+                    this._contentClass = this.options.contentClass;
+                    this._infoTitleStyle = 'padding: 5px;';
+                    this._infoContainerClasses = 'leaflet-control-layers leaflet-control';
+                },
+
+                onAdd: function (map) {
+                    var infoContainer = L.DomUtil.create('div', 'leaflet-control-layers');
+
+                    var infoTitle = L.DomUtil.create('div');
+                    infoContainer.appendChild(infoTitle);
+                    infoTitle.setAttribute('style', this._infoTitleStyle);
+
+                    var infoBody = L.DomUtil.create('div', 'leaflet-popup-content-wraper');
+                    infoContainer.appendChild(infoBody);
+                    infoBody.setAttribute('style', 'max-width:' + this.options.maxWidth);
+
+                    var infoContent = L.DomUtil.create('div', 'leaflet-popup-content');
+                    infoBody.appendChild(infoContent);
+
+                    var infoCloseButton = L.DomUtil.create('a', 'leaflet-popup-close-button');
+                    infoContainer.appendChild(infoCloseButton);
+                    infoCloseButton.innerHTML = 'x';
+                    infoCloseButton.setAttribute('style', 'cursor: pointer');
+
+                    this._infoContainer = infoContainer;
+                    this._infoTitleContainer = infoTitle;
+                    this._infoBodyContainer = infoBody;
+                    this._infoContentContainer = infoContent;
+                    this._infoCloseButtonContainer = infoCloseButton;
+
+                    infoTitle.innerHTML = this._infoTitle;
+                    infoContent.innerHTML = this._infoContent;
+                    this._showTitle();
+
+                    L.DomEvent.disableClickPropagation(infoContainer);
+                    L.DomEvent.on(infoCloseButton, 'click', L.DomEvent.stop);
+                    L.DomEvent.on(infoContainer, 'click', this._showContent, this);
+                    L.DomEvent.on(infoCloseButton, 'click', this._showTitle, this);
+
+                    return infoContainer;
+                },
+
+                onRemove: function (map) { },
+
+                setTitle: function (title) {
+                    this._infoTitle = title;
+                    if (this._infoTitleContainer != null) {
+                        this._infoTitleContainer.innerHTML = title;
+                    }
+                },
+
+                setTitleTooltip: function (titleTooltip) {
+                    this._infoTitleTooltip = titleTooltip;
+                    if (this._titleShown) {
+                        this._showTitleTooltip(true);
+                    }
+                },
+
+                setContent: function (content) {
+                    this._infoContent = content;
+                    if (this._infoContentContainer != null) {
+                        this._infoContentContainer.innerHTML = content;
+                    }
+                },
+
+                setTitleClass: function (titleClass) {
+                    this._titleClass = titleClass;
+                    if (this._titleShown) {
+                        this._addInfoClass(this._titleClass);
+                    }
+                },
+
+                setContentClass: function (contentClass) {
+                    this._contentClass = contentClass;
+                    if (!this._titleShown) {
+                        this._addInfoClass(this._contentClass);
+                    }
+                },
+
+                _showTitle: function (evt) {
+                    this._addInfoClass(this._titleClass);
+                    this._displayElement(this._infoTitleContainer, true);
+                    this._displayElement(this._infoBodyContainer, false);
+                    this._displayElement(this._infoCloseButtonContainer, false);
+                    this._showTitleTooltip(true);
+                    this._setCursorToPointer(this._infoContainer, true);
+                    this._titleShown = true;
+                },
+
+                _showContent: function (evt) {
+                    this._addInfoClass(this._contentClass);
+                    this._displayElement(this._infoTitleContainer, false);
+                    this._displayElement(this._infoBodyContainer, true);
+                    this._displayElement(this._infoCloseButtonContainer, true);
+                    this._showTitleTooltip(false);
+                    this._setCursorToPointer(this._infoContainer, false);
+                    this._titleShown = false;
+                },
+
+                _showTitleTooltip: function (showIt) {
+                    this._infoContainer.setAttribute('Title', (showIt) ? this._infoTitleTooltip : '');
+                },
+
+                _displayElement: function (element, displayIt) {
+                    element.style.display = (displayIt) ? '' : 'none';
+                },
+
+                _setCursorToPointer: function (element, setIt) {
+                    element.style.cursor = (setIt) ? 'pointer' : '';
+                },
+
+                _addInfoClass: function (classToAdd) {
+                    L.DomUtil.setClass(this._infoContainer, this._infoContainerClasses + ' ' + classToAdd);
+                }
+            });
+
+            L.control.info = function (opts) {
+                return new L.Control.Info(opts);
+            }
+
+            var title = [];
+            var tooltip = [];
+            var text = [];
+            var titleClass = [];
+            var contentClass = [];
+
+            var i = 0;
+            var j = 0;
+
+            title[0] = 'Lorem ipsum';
+            tooltip[0] = 'Lorem ipsum dolor sit amet';
+            text[0] = '<p style="margin-bottom: 6pt;"><b>Lorem ipsum</b></p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+            titleClass[0] = 'titleStyle1';
+            contentClass[0] = 'contentStyle1';
+
+            title[1] = 'Ut enim ad minim';
+            tooltip[1] = 'Ut enim ad minim veniam';
+            text[1] = '<p style="margin-bottom: 6pt;"><b><i>Ut enim ad minim</b></i></p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
+            titleClass[1] = 'titleStyle2';
+            contentClass[1] = 'contentStyle2';
+
+            myInfoControl = L.control.info({
+                position: 'topright',
+                title: title[0],
+                titleTooltip: tooltip[0],
+                titleClass: titleClass[0],
+                contentClass: contentClass[0]
+            });
+
+            myInfoControl.setContent(text[0]);
+
+            myInfoControl.addTo(map);
+
+
+            function changeText() {
+                i = ++i % 2;
+                myInfoControl.setTitle(title[i]);
+                myInfoControl.setTitleTooltip(tooltip[i]);
+                myInfoControl.setContent(text[i]);
+            }
+            function changeStyle() {
+                j = ++j % 2;
+                myInfoControl.setTitleClass(titleClass[j]);
+                myInfoControl.setContentClass(contentClass[j]);
+            }
+
+
+            for (var i = 0; i < testSites.length; i++) {
+                marker = new L.marker([testSites[i][1], testSites[i][2]],
+                    { icon: testIcon },
+                    { opacity: 0.5 }
                 )
-				.bindPopup(testSites[i][0])
-				.addTo(map);
-		        }
-                
-                L.Control.Info = L.Control.extend({     
+                    .bindPopup(testSites[i][0])
+                    .addTo(map);
+            }
 
-options: {
-  title: 'Info',
-  titleTooltip: 'Click here for more info',
-  content: '',
-  maxWidth: '250px',
-  titleClass: '',
-  contentClass: ''
-},
+        </script>
+</body>
 
-initialize: function(options) {        
-  L.Util.setOptions(this, options);
-  this._infoContainer = null;
-  this._infoTitleContainer = null;
-  this._infoBodyContainer = null;
-  this._infoCloseButtonContainer = null;
-  this._infoContentContainer = null;
-  this._infoTitle = this.options.title;
-  this._infoTitleTooltip = this.options.titleTooltip;
-  this._infoContent = this.options.content;
-  this._titleShown = false;
-  this._titleClass = this.options.titleClass;
-  this._contentClass = this.options.contentClass;
-  this._infoTitleStyle = 'padding: 5px;';
-  this._infoContainerClasses = 'leaflet-control-layers leaflet-control';
-},
-
-onAdd: function(map) {
-  var infoContainer = L.DomUtil.create('div', 'leaflet-control-layers');
-
-  var infoTitle = L.DomUtil.create('div');
-  infoContainer.appendChild(infoTitle);
-  infoTitle.setAttribute('style', this._infoTitleStyle);
-
-  var infoBody = L.DomUtil.create('div', 'leaflet-popup-content-wraper');
-  infoContainer.appendChild(infoBody);
-  infoBody.setAttribute('style', 'max-width:' + this.options.maxWidth);
-
-  var infoContent = L.DomUtil.create('div', 'leaflet-popup-content');
-  infoBody.appendChild(infoContent);
-
-  var infoCloseButton = L.DomUtil.create('a', 'leaflet-popup-close-button');
-  infoContainer.appendChild(infoCloseButton);
-  infoCloseButton.innerHTML = 'x';
-  infoCloseButton.setAttribute('style', 'cursor: pointer');
-
-  this._infoContainer = infoContainer;
-  this._infoTitleContainer = infoTitle;
-  this._infoBodyContainer = infoBody;
-  this._infoContentContainer = infoContent;
-  this._infoCloseButtonContainer = infoCloseButton;
-
-  infoTitle.innerHTML = this._infoTitle;
-  infoContent.innerHTML = this._infoContent;
-  this._showTitle();
-
-  L.DomEvent.disableClickPropagation(infoContainer);
-  L.DomEvent.on(infoCloseButton, 'click', L.DomEvent.stop);
-  L.DomEvent.on(infoContainer, 'click', this._showContent, this);
-  L.DomEvent.on(infoCloseButton, 'click', this._showTitle, this);
-
-  return infoContainer;
-},
-
-onRemove: function(map){},
-
-setTitle: function(title) {
-  this._infoTitle = title;
-  if (this._infoTitleContainer != null) {
-    this._infoTitleContainer.innerHTML = title;
-  }
-},
-
-setTitleTooltip: function(titleTooltip) {
-  this._infoTitleTooltip = titleTooltip;
-  if (this._titleShown) {
-    this._showTitleTooltip(true);
-  }
-},
-
-setContent: function(content) {
-  this._infoContent = content;
-  if (this._infoContentContainer != null) {
-    this._infoContentContainer.innerHTML = content;
-  }
-},
-
-setTitleClass: function(titleClass) {
-  this._titleClass = titleClass;
-  if (this._titleShown) {
-    this._addInfoClass(this._titleClass);
-  }
-},
-
-setContentClass: function(contentClass) {
-  this._contentClass = contentClass;
-  if (!this._titleShown) {
-    this._addInfoClass(this._contentClass);
-  }
-},
-
-_showTitle: function (evt) {
-  this._addInfoClass(this._titleClass);
-  this._displayElement(this._infoTitleContainer, true);
-  this._displayElement(this._infoBodyContainer, false);
-  this._displayElement(this._infoCloseButtonContainer, false);
-  this._showTitleTooltip(true);
-  this._setCursorToPointer(this._infoContainer, true);
-  this._titleShown = true;
-},
-
-_showContent: function (evt) {
-  this._addInfoClass(this._contentClass);
-  this._displayElement(this._infoTitleContainer, false);
-  this._displayElement(this._infoBodyContainer, true);
-  this._displayElement(this._infoCloseButtonContainer, true);
-  this._showTitleTooltip(false);
-  this._setCursorToPointer(this._infoContainer, false);
-  this._titleShown = false;
-},
-
-_showTitleTooltip: function (showIt) {
-  this._infoContainer.setAttribute('Title', (showIt) ? this._infoTitleTooltip : '');
-},
-
-_displayElement: function (element, displayIt) {
-  element.style.display = (displayIt) ? '' : 'none';
-},
-
-_setCursorToPointer: function (element, setIt) {
-  element.style.cursor = (setIt) ? 'pointer' : '';
-},
-
-_addInfoClass: function (classToAdd) {
-  L.DomUtil.setClass(this._infoContainer, this._infoContainerClasses + ' ' + classToAdd);
-}
-});
-
-L.control.info = function(opts) {
-return new L.Control.Info(opts);
-}
-    
-      </script>
-    </body>
 </html>
