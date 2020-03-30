@@ -51,9 +51,11 @@ The oversimplified versioin is to prove the point of the mapping purpose.
 
     <div id="map"></div>
     <div style="float: right; margin-top:6pt;">
-        <button onclick="changeText();">Change text</button>
-        <button onclick="changeStyle();">Change style</button>
 
+        <!---
+            <button onclick="changeText();">Change text</button> 
+            <button onclick="changeStyle();">Change style</button>
+        -->
         <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
             integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
             crossorigin=""></script>
@@ -242,15 +244,17 @@ The oversimplified versioin is to prove the point of the mapping purpose.
 
             title[0] = 'Map info';
             tooltip[0] = 'Information on the purpose of this map';
-            text[0] = '<p style="margin-bottom: 6pt;"><b>The COVID-19 Testing Facilities Map</b></p>This map was created by CEVEN.hack fo the #CodevsCOVID19 Hackahton. For more information on the project please visit <a href:"https://github.com/IneffableKoD/cov19testmap"></a>'
+            text[0] = '<p style="margin-bottom: 6pt;"><b>The COVID-19 Testing Facilities Map</b></p>This map was created by CEVEN.hack fo the #CodevsCOVID19 Hackahton. For more information on the project please visit https://github.com/IneffableKoD/cov19testmap'
             titleClass[0] = 'titleStyle1';
             contentClass[0] = 'contentStyle1';
 
+            /*
             title[1] = 'Ut enim ad minim';
             tooltip[1] = 'Ut enim ad minim veniam';
             text[1] = '<p style="margin-bottom: 6pt;"><b><i>Ut enim ad minim</b></i></p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
             titleClass[1] = 'titleStyle2';
             contentClass[1] = 'contentStyle2';
+            */
 
             myInfoControl = L.control.info({
                 position: 'topright',
@@ -264,7 +268,7 @@ The oversimplified versioin is to prove the point of the mapping purpose.
 
             myInfoControl.addTo(map);
 
-
+            /*
             function changeText() {
                 i = ++i % 2;
                 myInfoControl.setTitle(title[i]);
@@ -276,6 +280,7 @@ The oversimplified versioin is to prove the point of the mapping purpose.
                 myInfoControl.setTitleClass(titleClass[j]);
                 myInfoControl.setContentClass(contentClass[j]);
             }
+            */
 
 
             for (var i = 0; i < testSites.length; i++) {
