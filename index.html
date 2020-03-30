@@ -1,27 +1,31 @@
+<!--- This version of the map is a workaround implementation for demo purposes
+The oversimplified versioin is to prove the point of the mapping purpose.
+/docs holds the actual prototype that we've been working on.
+-->
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Simple Leaflet Map</title>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
-          integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-          crossorigin=""/></head>
+        <head>
+                <title>Simple Leaflet Map</title>
+                <meta charset="utf-8" />
+                <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+                      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+                      crossorigin=""/></head>
 <body>
-    <div id="map" style="width: 600px; height: 400px"></div>
+        <div id="map" style="width: 600px; height: 400px"></div>
 
-    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
-            integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
-            crossorigin=""></script>
-    <script>
-        var map = L.map('map').setView([-41.2858, 174.78682], 14);
-        mapLink = 
-            '<a href="http://openstreetmap.org">OpenStreetMap</a>';
-        L.tileLayer(
-            'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; ' + mapLink + ' Contributors',
-            maxZoom: 18,
-            }).addTo(map);
-
-  </script>
+        <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+                integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+                crossorigin=""></script>
+        <script>
+            var map = L.map('map').setView([-41.2858, 174.78682], 14);
+            mapLink = 
+                '<a href="http://openstreetmap.org">OpenStreetMap</a>';
+            L.tileLayer(
+                'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; ' + mapLink + ' Contributors',
+                maxZoom: 18,
+                }).addTo(map);
+    
+      </script>
 </body>
 </html>
