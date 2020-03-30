@@ -49,7 +49,6 @@ The oversimplified versioin is to prove the point of the mapping purpose.
                 ["<h1>Mehrzweckhalle Stutz</h1><br>Stutzstrasse 1, 4415 Lausen, Switzerland<br>-<br>-<br><br><b>Open 24/7</b>",47.47298195871847,7.764571309089661],
                 ["<h1>Kantonsschule Alpenquai</h1><br>Alpenquai 46-50, 6005 Luzern, Switzerland<br>-<br>Source: https://www.pilatustoday.ch/coronavirus/drive-in-coronavirus-tests-im-kanton-luzern-137330917<br><br><b>Drive-in test, only by doctors appointement.</b>",47.043969390128844,8.321768045425415],
 
-
                 //["<h1>Title</h1><br>Street Nr, ZIP City, Country<br>Phone<br>Website<br><br><b>Comment</b>",Latitude,Longitude],
 	            	];
 
@@ -65,7 +64,8 @@ The oversimplified versioin is to prove the point of the mapping purpose.
 
                 for (var i = 0; i < testSites.length; i++) {
                 marker = new L.marker([testSites[i][1],testSites[i][2]],
-                {icon: testIcon}
+                {icon: testIcon},
+                {opacity: 0.8}
                 )
 				.bindPopup(testSites[i][0])
 				.addTo(map);
