@@ -44,8 +44,8 @@ The oversimplified versioin is to prove the point of the mapping purpose.
                   });
 
                 var testSites = [
-	        	["UKBB","Str",47.56356134342556,7.581703662872314],
-	        	["KUSPO Münchenstein","Str",47.5204177883841,7.616620659828186],
+	        	["UKBB",47.56356134342556,7.581703662872314],
+	        	["KUSPO Münchenstein",47.5204177883841,7.616620659828186],
 	            	];
 
 
@@ -59,10 +59,10 @@ The oversimplified versioin is to prove the point of the mapping purpose.
                 }).addTo(map);
 
                 for (var i = 0; i < testSites.length; i++) {
-                marker = new L.marker([testSites[i][2],testSites[i][3]],
+                marker = new L.marker([testSites[i][1],testSites[i][2]],
                 {icon: testIcon}
                 )
-				.bindPopup(testSites[i][0]<br>testSites[i][1])
+				.bindPopup(testSites[i][0])
 				.addTo(map);
 		        }
 
