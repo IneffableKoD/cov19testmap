@@ -11,6 +11,8 @@
 | 0 | Add layer selection on map                                    | Ineff |
 | 0 | Add German Hospitals (unverifieed)                            | Ineff |
 | 0 | Add Austrian Hospitals (unverifieed)                          | Ineff |
+| 0 | Add Credits (TomazicM (https://gis.stackexchange.com/users/104146/tomazicm), Malcolm Maclean (https://leanpub.com/u/d3noob))| Ineff |
+
 
 
 
