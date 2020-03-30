@@ -57,7 +57,7 @@ functionn infoPopup (feature, layer) {
     <p class='infoHeader'>" + feature.properties.adress +"</p>");
     layer.setIcon(testFacilityIcon);
 
-};
+ };
 
 */
 
@@ -82,10 +82,3 @@ L.geoJSON(testSitesCHE,{
         
 }).addTo(map);
 
-L.geoJSON(testSitesFRA,{
-
-    //onEachFeature: infoPopup
-    onEachFuture (feature, layer) {}
-
-        
-}).addTo(map);
