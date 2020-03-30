@@ -59,7 +59,9 @@ The oversimplified versioin is to prove the point of the mapping purpose.
                 }).addTo(map);
 
                 for (var i = 0; i < testSites.length; i++) {
-			    marker = new L.marker([testSites[i][1],testSites[i][2]])
+                marker = new L.marker([testSites[i][1],testSites[i][2]],
+                {icon: testIcon}
+                )
 				.bindPopup(testSites[i][0])
 				.addTo(map);
 		        }
