@@ -70,6 +70,8 @@ Thanks and shoutouts to:
 | 1      | Add Credits                     | Ineff |
 | 0      | Add all Swiss facilities        |       |
 | 0      | Add other facilities            |       |
+| 0      | Replace info top right with sidebar (https://github.com/noerw/leaflet-sidebar-v2)            |       |
+
 
 ## Resources 
 
