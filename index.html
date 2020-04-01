@@ -14,7 +14,7 @@ The oversimplified version is to prove the point of the mapping purpose.
     <!-- TO-DO: insert draw tool
         <link rel="stylesheet" href="http://leaflet.github.io/Leaflet.draw/leaflet.draw.css" /
     -->
-
+    <link rel="stylesheet" href="disclaimer.css">
     <style>
         body {
             padding: 0;
@@ -53,6 +53,31 @@ The oversimplified version is to prove the point of the mapping purpose.
 
 <body>
 
+    <!--Infopopup-->
+    <div id="boxes">
+        <div style="top: 50%; left: 50%; display: none;" id="dialog" class="window">
+            <div id="san">
+                <a href="#" class="close agree"><img src="img/btn_close.png" width="25"
+                        style="float:right; margin-right: -11px; margin-top: -12px;"></a>
+                <br>
+                <h1>DISCLAIMER</h1>
+                <br>
+                The information on this map is not accurate nor does it represent any medical or safety advice. This
+                site is only for education purposes.
+                <br><br>
+                This map was created by CEVEN.hack. For more information on the project please visit <a
+                    href="https://github.com/IneffableKoD/cov19testmap">the repository</a>.
+                <br><br>
+                <a href="https://bag-coronavirus.ch/">Offical FOPH informataion</a>
+                <br><br>
+                <img src="img/stayhome.png" width="450">
+            </div>
+        </div>
+        <div style="width: 2478px; font-size: 32pt; color:white; height: 1202px; display: none; opacity: 0.4;"
+            id="mask"></div>
+    </div>
+
+    <!--Map-->
     <div id="map"></div>
     <div style="float: right; margin-top:6pt;">
 
@@ -100,7 +125,7 @@ The oversimplified version is to prove the point of the mapping purpose.
                     maxZoom: 18,
                 }).addTo(map);
 
-                var drawnItems = new L.FeatureGroup();
+            var drawnItems = new L.FeatureGroup();
             map.addLayer(drawnItems);
 
             /* TO-DO: insert draw tool
@@ -272,7 +297,7 @@ The oversimplified version is to prove the point of the mapping purpose.
 
             title[0] = 'COVID-19 Testing Facilities - Info';
             tooltip[0] = 'Information on the purpose of this map';
-            text[0] = '<p style="margin-bottom: 6pt;"><b><font size="5">The COVID-19 Testing Facilities Map</font></b></p><b>IMPORTANT DISCLAIMER: The information on this map is not accurate nor does it represent any medical or safety advice. This site is only for education purposes.</b><br><br>This map was created by CEVEN.hack for the #CodevsCOVID19 Hackahton. For more information on the project please visit https://github.com/IneffableKoD/cov19testmap'
+            text[0] = '<p style="margin-bottom: 6pt;"><b><font size="5">The COVID-19 Testing Facilities Map</font></b></p><b>This map is work in progress. Please contact me via GitHub if you want to help.</b>'
             titleClass[0] = 'titleStyle1';
             contentClass[0] = 'contentStyle1';
 
@@ -321,6 +346,10 @@ The oversimplified version is to prove the point of the mapping purpose.
             }
 
         </script>
+
+        <!--scripts popup-->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+        <script src="disclaimer.js"></script>
 </body>
 
 </html>
