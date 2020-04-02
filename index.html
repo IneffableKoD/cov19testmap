@@ -8,13 +8,15 @@ The oversimplified version is to prove the point of the mapping purpose.
 <head>
     <title>COVID-19 Testing Facilitiees</title>
     <meta charset="utf-8" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
         integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
         crossorigin="" />
     <!-- TO-DO: insert draw tool
         <link rel="stylesheet" href="http://leaflet.github.io/Leaflet.draw/leaflet.draw.css" /
     -->
-    <link rel="stylesheet" href="disclaimer.css">
+    <link rel="stylesheet" href="css/disclaimer.css">
+    <link rel="stylesheet" href="css/sidebar.css" />
     <style>
         body {
             padding: 0;
@@ -26,6 +28,12 @@ The oversimplified version is to prove the point of the mapping purpose.
         #map {
             height: 100%;
             width: 100%;
+        }
+
+        .boxtext {
+            font-style: italic;
+            text-align: justify;
+            color: #AAA;
         }
 
         .titleStyle1 {
@@ -53,6 +61,73 @@ The oversimplified version is to prove the point of the mapping purpose.
 
 <body>
 
+    <!--Sidebar-->
+
+    <!-- optionally define the sidebar content via HTML markup -->
+    <div id="sidebar" class="leaflet-sidebar collapsed">
+
+            <!-- nav tabs -->
+            <div class="leaflet-sidebar-tabs">
+                <!-- top aligned tabs -->
+                <ul role="tablist">
+                    <li><a href="#home" role="tab"><i class="fa fa-bars active"></i></a></li>
+                    <li><a href="#autopan" role="tab"><i class="fa fa-info"></i></a></li>
+                </ul>
+    
+                <!-- bottom aligned tabs -->
+                <ul role="tablist">
+                    <li><a href="https://github.com/IneffableKoD/cov19testmap"><i class="fa fa-github"></i></a></li>
+                </ul>
+            </div>
+    
+            <!-- panel content -->
+            <div class="leaflet-sidebar-content">
+                <div class="leaflet-sidebar-pane" id="home">
+                    <h1 class="leaflet-sidebar-header">
+                        COVID-19 Testing Facilities Info
+                        <span class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></span>
+                    </h1>    
+                    <h2>Welcome</h2>
+                    <p>This map was created for two main purposes (still exploring):</p>
+                    <ul>
+                        <li>Consumer information on where to get tested for COVID-19 (usually after a screening call)</li>
+                        <li>Provide a tool to plan further testing sites/facilities</li>
+                    </ul>
+    
+                    <p class="boxtext">Please be aware that most information here is either found by the author or crowdsourced. We do not guarantee any accuracy.</p>
+                    <p class="boxtext">All data on this page, including the page source are open-source. You can find all information on the <a href="https://github.com/IneffableKoD/cov19testmap">GitHub repository</a>.</p>
+                    <p class="boxtext">A huge THANK YOU goes out to all those that contributed to this project either by providing code or crowdsourcing testing facilities!</p>
+                    <p class="boxtext">If you want to contribute, please feel free to enter testing facilities in the <a href="https://docs.google.com/forms/d/e/1FAIpQLSfpChekpNXQyKVn9tOCvnQmEW5T_VMQmtV5cAVMucnCyJGDGw/viewform?usp=sf_link">Google Form</a> or by submitting a pull request.</p>
+                </div>
+    
+                
+                <div class="leaflet-sidebar-pane" id="autopan">
+                    <h1 class="leaflet-sidebar-header">
+                        Made by
+                        <span class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></span>
+                    </h1>
+                    <p>
+                        This map was created by CEVEN.hack – the <a href="https://www.ceven.tech/">CEVEN</a> hackathon team. 
+                    </p>
+                    <p>
+                        The main contributor and project initiator is <a href="http://ineff.ch/">IneffableKoD</a> aka <a href="https://www.linkedin.com/in/yannickzehnder/">Yannick Zehnnder</a>.
+                    </p>
+                </div>
+                
+            
+    
+                <div class="leaflet-sidebar-pane" id="messages">
+                    <h1 class="leaflet-sidebar-header">Messages<span class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
+                </div>
+            </div>
+        </div>
+    
+        <div id="map"></div>
+    
+        
+
+        <!-- End Sidebar -->
+
     <!--Infopopup-->
     <div id="boxes">
         <div style="top: 50%; left: 50%; display: none;" id="dialog" class="window">
@@ -78,8 +153,9 @@ The oversimplified version is to prove the point of the mapping purpose.
         <div style="width: 2478px; font-size: 32pt; color:white; height: 1202px; display: none; opacity: 0.4;"
             id="mask"></div>
     </div>
+    <!-- End Infopopup -->
 
-    <!--Map-->
+    <!-- Map -->
     <div id="map"></div>
     <div style="float: right; margin-top:6pt;">
 
@@ -90,6 +166,8 @@ The oversimplified version is to prove the point of the mapping purpose.
         <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
             integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
             crossorigin=""></script>
+
+    <!-- End Map -->
 
         <!-- TO-DO: insert draw tool (GitHub src/.. - change all links)
         <script src="http://leaflet.github.io/Leaflet.draw/leaflet.draw.js">
@@ -349,9 +427,68 @@ The oversimplified version is to prove the point of the mapping purpose.
 
         </script>
 
-        <!--scripts popup-->
+        <!-- scripts popup -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
         <script src="disclaimer.js"></script>
+        
+        <!-- End scripts popup -->
+
+        <!-- scripts sidebar -->
+        <script src="js/sidebar.js"></script>
+    
+        <script>
+    
+            // create the sidebar instance and add it to the map
+            var sidebar = L.control.sidebar({ container: 'sidebar' })
+                .addTo(map)
+                .open('home');
+    
+            // add panels dynamically to the sidebar
+    
+            /* Remove options buttons
+            sidebar
+                .addPanel({
+                    id:   'js-api',
+                    tab:  '<i class="fa fa-gear"></i>',
+                    title: 'JS API',
+                    pane: '<p>The Javascript API allows to dynamically create or modify the panel state.<p/><p><button onclick="sidebar.enablePanel(\'mail\')">enable mails panel</button><button onclick="sidebar.disablePanel(\'mail\')">disable mails panel</button></p><p><button onclick="addUser()">add user</button></b>',
+                })
+                // add a tab with a click callback, initially disabled
+                .addPanel({
+                    id:   'mail',
+                    tab:  '<i class="fa fa-envelope"></i>',
+                    title: 'Messages',
+                    button: function() { alert('opened via JS callback') },
+                    disabled: true,
+                })
+    
+            // be notified when a panel is opened
+            sidebar.on('content', function (ev) {
+                switch (ev.id) {
+                    case 'autopan':
+                    sidebar.options.autopan = true;
+                    break;
+                    default:
+                    sidebar.options.autopan = false;
+                }
+            });
+            */
+    
+            /* User Function
+            var userid = 0
+            function addUser() {
+                sidebar.addPanel({
+                    id:   'user' + userid++,
+                    tab:  '<i class="fa fa-user"></i>',
+                    title: 'User Profile ' + userid,
+                    pane: '<p>user ipsum dolor sit amet</p>',
+                });
+            }
+            */
+        </script>
+        <!-- End scripts sidebar -->
+
+
 </body>
 
 </html>
