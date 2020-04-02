@@ -1,33 +1,28 @@
-<!--- This version of the map is a workaround implementation for demo purposes
-The oversimplified version is to prove the point of the mapping purpose.
-/docs holds the actual prototype that we've been working on.
--->
+
 <!DOCTYPE html>
 <html>
-
 <head>
-    <title>COVID-19 Testing Facilitiees</title>
-    <meta charset="utf-8" />
+    <title>COVID-19 Testing Facilities</title>
+
+
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
         integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
         crossorigin="" />
-    <!-- TO-DO: insert draw tool
-        <link rel="stylesheet" href="http://leaflet.github.io/Leaflet.draw/leaflet.draw.css" /
-    -->
+
+    <link rel="stylesheet" href="css/sidebar.css">
+    
     <link rel="stylesheet" href="css/disclaimer.css">
-    <link rel="stylesheet" href="css/sidebar.css" />
+
     <style>
         body {
             padding: 0;
             margin: 0;
         }
 
-        html,
-        body,
-        #map {
+        html, body, #map {
             height: 100%;
-            width: 100%;
+            font: 10pt "Helvetica Neue", Arial, Helvetica, sans-serif;
         }
 
         .boxtext {
@@ -35,53 +30,53 @@ The oversimplified version is to prove the point of the mapping purpose.
             text-align: justify;
             color: #AAA;
         }
-
-        .titleStyle1 {
-            color: #072793;
-            font-weight: bold;
-            font-size: 40px;
-            background-color: rgba(245, 245, 245, 0.8);
-        }
-
-        .contentStyle1 {
-            background-color: rgba(245, 245, 245, 0.8);
-        }
-
-        .titleStyle2 {
-            font-weight: bold;
-            background-color: #F0FFF0;
-        }
-
-        .contentStyle2 {
-            background-color: #FFFFE8;
-        }
     </style>
 
 </head>
-
 <body>
 
-    <!--Sidebar-->
+        <div id="boxes">
+                <div style="top: 50%; left: 50%; display: none;" id="dialog" class="window"> 
+                <div id="san">
+                <a href="#" class="close agree"><img src="img/btn_close.png" width="25" style="float:right; margin-right: -11px; margin-top: -12px;"></a>
+                <br>
+                <h1>DISCLAIMER</h1>
+                <br>
+                The information on this map is not accurate nor does it represent any medical or safety advice. This site is only for education purposes.
+                <br><br>
+                This map was created by CEVEN.hack. For more information on the project please visit <a href="https://github.com/IneffableKoD/cov19testmap">the repository</a>. 
+                <br><br>
+                <a href="https://bag-coronavirus.ch/">Offical FOPH informataion</a>
+                <br><br>
+                <img src="img/stayhome.png" width="450">
+                </div>
+                </div>
+                <div style="width: 2478px; font-size: 32pt; color:white; height: 1202px; display: none; opacity: 0.4;" id="mask"></div>
+                </div>
+
+                <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script> 
+                <script src="js/disclaimer.js"></script>
+    
 
     <!-- optionally define the sidebar content via HTML markup -->
     <div id="sidebar" class="leaflet-sidebar collapsed">
 
-            <!-- nav tabs -->
-            <div class="leaflet-sidebar-tabs">
-                <!-- top aligned tabs -->
-                <ul role="tablist">
-                    <li><a href="#home" role="tab"><i class="fa fa-bars active"></i></a></li>
-                    <li><a href="#autopan" role="tab"><i class="fa fa-info"></i></a></li>
-                </ul>
-    
-                <!-- bottom aligned tabs -->
-                <ul role="tablist">
-                    <li><a href="https://github.com/IneffableKoD/cov19testmap"><i class="fa fa-github"></i></a></li>
-                </ul>
-            </div>
-    
-            <!-- panel content -->
-            <div class="leaflet-sidebar-content">
+        <!-- nav tabs -->
+        <div class="leaflet-sidebar-tabs">
+            <!-- top aligned tabs -->
+            <ul role="tablist">
+                <li><a href="#home" role="tab"><i class="fa fa-bars active"></i></a></li>
+                <li><a href="#autopan" role="tab"><i class="fa fa-info"></i></a></li>
+            </ul>
+
+            <!-- bottom aligned tabs -->
+            <ul role="tablist">
+                <li><a href="https://github.com/IneffableKoD/cov19testmap"><i class="fa fa-github"></i></a></li>
+            </ul>
+        </div>
+
+        <!-- panel content -->
+        <div class="leaflet-sidebar-content">
                 <div class="leaflet-sidebar-pane" id="home">
                     <h1 class="leaflet-sidebar-header">
                         COVID-19 Testing Facilities Info
@@ -99,83 +94,38 @@ The oversimplified version is to prove the point of the mapping purpose.
                     <p class="boxtext">A huge THANK YOU goes out to all those that contributed to this project either by providing code or crowdsourcing testing facilities!</p>
                     <p class="boxtext">If you want to contribute, please feel free to enter testing facilities in the <a href="https://docs.google.com/forms/d/e/1FAIpQLSfpChekpNXQyKVn9tOCvnQmEW5T_VMQmtV5cAVMucnCyJGDGw/viewform?usp=sf_link">Google Form</a> or by submitting a pull request.</p>
                 </div>
-    
-                
-                <div class="leaflet-sidebar-pane" id="autopan">
-                    <h1 class="leaflet-sidebar-header">
-                        Made by
-                        <span class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></span>
-                    </h1>
-                    <p>
-                        This map was created by CEVEN.hack – the <a href="https://www.ceven.tech/">CEVEN</a> hackathon team. 
-                    </p>
-                    <p>
-                        The main contributor and project initiator is <a href="http://ineff.ch/">IneffableKoD</a> aka <a href="https://www.linkedin.com/in/yannickzehnder/">Yannick Zehnnder</a>.
-                    </p>
-                </div>
-                
+
             
-    
-                <div class="leaflet-sidebar-pane" id="messages">
-                    <h1 class="leaflet-sidebar-header">Messages<span class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
-                </div>
-            </div>
-        </div>
-    
-        <div id="map"></div>
-    
+                <div class="leaflet-sidebar-pane" id="autopan">
+                        <h1 class="leaflet-sidebar-header">
+                            Made by
+                            <span class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></span>
+                        </h1>
+                        <p>
+                            This map was created by CEVEN.hack – the <a href="https://www.ceven.tech/">CEVEN</a> hackathon team. 
+                        </p>
+                        <p>
+                            The main contributor and project initiator is <a href="http://ineff.ch/">IneffableKoD</a> aka <a href="https://www.linkedin.com/in/yannickzehnder/">Yannick Zehnnder</a>.
+                        </p>
+                    </div>
+            
         
 
-        <!-- End Sidebar -->
-
-    <!--Infopopup-->
-    <div id="boxes">
-        <div style="top: 50%; left: 50%; display: none;" id="dialog" class="window">
-            <div id="san">
-                <a href="#" class="close agree"><img src="img/btn_close.png" width="25"
-                        style="float:right; margin-right: -11px; margin-top: -12px;"></a>
-                <br>
-                <h1>DISCLAIMER</h1>
-                <br>
-                The information on this map may not be accurate nor does it represent any medical or safety advice. This
-                site is only for education purposes.
-                <br><br>
-                This map was created by CEVEN.hack. For more information on the project please visit <a
-                    href="https://github.com/IneffableKoD/cov19testmap">the repository</a>.
-                <br>
-                If you want to help collect testing facilities, you can enter them <a href="https://docs.google.com/forms/d/e/1FAIpQLSfpChekpNXQyKVn9tOCvnQmEW5T_VMQmtV5cAVMucnCyJGDGw/viewform?usp=sf_link">here</a>.
-                <br><br>
-                <a href="https://bag-coronavirus.ch/">Offical FOPH COVID-19 informataion</a>
-                <br><br>
-                <img src="img/stayhome.png" width="450">
+            <div class="leaflet-sidebar-pane" id="messages">
+                <h1 class="leaflet-sidebar-header">Messages<span class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
             </div>
         </div>
-        <div style="width: 2478px; font-size: 32pt; color:white; height: 1202px; display: none; opacity: 0.4;"
-            id="mask"></div>
     </div>
-    <!-- End Infopopup -->
 
-    <!-- Map -->
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+        crossorigin=""></script>
+    <script src="js/sidebar.js"></script>
+
+    <script src="geojson/testsitesCHE.js" type="text/javascript"></script>
     <div id="map"></div>
-    <div style="float: right; margin-top:6pt;">
+    <script>
 
-        <!--- 
-            <button onclick="changeText();">Change text</button> 
-            <button onclick="changeStyle();">Change style</button>
-        -->
-        <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
-            integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
-            crossorigin=""></script>
-
-    <!-- End Map -->
-
-        <!-- TO-DO: insert draw tool (GitHub src/.. - change all links)
-        <script src="http://leaflet.github.io/Leaflet.draw/leaflet.draw.js">
-        </script>
-        -->
-        <script>
-
-            var testIcon = L.icon({
+var testIcon = L.icon({
                 iconUrl: 'img/facilityicon.png',
                 //shadowUrl: 'iconshadow.png',
                 iconSize: [32, 32],   // size of the icon
@@ -185,310 +135,102 @@ The oversimplified version is to prove the point of the mapping purpose.
                 //popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
             });
 
-            var testSites = [
-                ["<h1>UKBB</h1><br>Spitalstrasse 33, 4056 Basel, Switzerland<br>+41 61 704 12 12<br>https://www.ukbb.ch/<br><br><b>Only kids younger than 16 are tested</b>", 47.56356134342556, 7.581703662872314],
-                ["<h1>KUSPO Münchenstein</h1><br>Loogstrasse 2, 4142 Münchenstein, Switzerland<br>-<br>-<br><br><b>Open 08.00-20.00</b>", 47.5204177883841, 7.616620659828186],
-                ["<h1>Mehrzweckhalle Stutz</h1><br>Stutzstrasse 1, 4415 Lausen, Switzerland<br>-<br>-<br><br><b>Open 24/7</b>", 47.47298195871847, 7.764571309089661],
-                ["<h1>Kantonsschule Alpenquai</h1><br>Alpenquai 46-50, 6005 Luzern, Switzerland<br>-<br>Source: https://www.pilatustoday.ch/coronavirus/drive-in-coronavirus-tests-im-kanton-luzern-137330917<br><br><b>Drive-in test, only by doctors appointement.</b>", 47.043969390128844, 8.321768045425415],
-
-                //["<h1>Title</h1><br>Street Nr, ZIP City, Country<br>Phone<br>Website<br><br><b>Comment</b>",Latitude,Longitude],
-            ];
-
-
-            var map = L.map('map').setView([46.8182, 8.2275], 8);
-
-            mapLink =
-                '<a href="http://openstreetmap.org">OpenStreetMap</a>';
-            L.tileLayer(
-                'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                    attribution: '&copy; ' + mapLink + ' Contributors',
-                    maxZoom: 18,
-                }).addTo(map);
-
-            var drawnItems = new L.FeatureGroup();
-            map.addLayer(drawnItems);
-
-            /* TO-DO: insert draw tool
-            var drawControl = new L.Control.Draw({
-                edit: {
-                    featureGroup: drawnItems
-                }
-            });
-            map.addControl(drawControl);
-
-            map.on('draw:created', function (e) {
-                var type = e.layerType,
-                    layer = e.layer;
-                drawnItems.addLayer(layer);
-            });
-            */
-
-            L.Control.Info = L.Control.extend({
-
-                options: {
-                    title: 'Info',
-                    titleTooltip: 'Click here for more info',
-                    content: '',
-                    maxWidth: '500px',
-                    titleClass: '',
-                    contentClass: ''
-                },
-
-                initialize: function (options) {
-                    L.Util.setOptions(this, options);
-                    this._infoContainer = null;
-                    this._infoTitleContainer = null;
-                    this._infoBodyContainer = null;
-                    this._infoCloseButtonContainer = null;
-                    this._infoContentContainer = null;
-                    this._infoTitle = this.options.title;
-                    this._infoTitleTooltip = this.options.titleTooltip;
-                    this._infoContent = this.options.content;
-                    this._titleShown = false;
-                    this._titleClass = this.options.titleClass;
-                    this._contentClass = this.options.contentClass;
-                    this._infoTitleStyle = 'padding: 5px;';
-                    this._infoContainerClasses = 'leaflet-control-layers leaflet-control';
-                },
-
-                onAdd: function (map) {
-                    var infoContainer = L.DomUtil.create('div', 'leaflet-control-layers');
-
-                    var infoTitle = L.DomUtil.create('div');
-                    infoContainer.appendChild(infoTitle);
-                    infoTitle.setAttribute('style', this._infoTitleStyle);
-
-                    var infoBody = L.DomUtil.create('div', 'leaflet-popup-content-wraper');
-                    infoContainer.appendChild(infoBody);
-                    infoBody.setAttribute('style', 'max-width:' + this.options.maxWidth);
-
-                    var infoContent = L.DomUtil.create('div', 'leaflet-popup-content');
-                    infoBody.appendChild(infoContent);
-
-                    var infoCloseButton = L.DomUtil.create('a', 'leaflet-popup-close-button');
-                    infoContainer.appendChild(infoCloseButton);
-                    infoCloseButton.innerHTML = 'x';
-                    infoCloseButton.setAttribute('style', 'cursor: pointer');
-
-                    this._infoContainer = infoContainer;
-                    this._infoTitleContainer = infoTitle;
-                    this._infoBodyContainer = infoBody;
-                    this._infoContentContainer = infoContent;
-                    this._infoCloseButtonContainer = infoCloseButton;
-
-                    infoTitle.innerHTML = this._infoTitle;
-                    infoContent.innerHTML = this._infoContent;
-                    this._showTitle();
-
-                    L.DomEvent.disableClickPropagation(infoContainer);
-                    L.DomEvent.on(infoCloseButton, 'click', L.DomEvent.stop);
-                    L.DomEvent.on(infoContainer, 'click', this._showContent, this);
-                    L.DomEvent.on(infoCloseButton, 'click', this._showTitle, this);
-
-                    return infoContainer;
-                },
-
-                onRemove: function (map) { },
-
-                setTitle: function (title) {
-                    this._infoTitle = title;
-                    if (this._infoTitleContainer != null) {
-                        this._infoTitleContainer.innerHTML = title;
-                    }
-                },
-
-                setTitleTooltip: function (titleTooltip) {
-                    this._infoTitleTooltip = titleTooltip;
-                    if (this._titleShown) {
-                        this._showTitleTooltip(true);
-                    }
-                },
-
-                setContent: function (content) {
-                    this._infoContent = content;
-                    if (this._infoContentContainer != null) {
-                        this._infoContentContainer.innerHTML = content;
-                    }
-                },
-
-                setTitleClass: function (titleClass) {
-                    this._titleClass = titleClass;
-                    if (this._titleShown) {
-                        this._addInfoClass(this._titleClass);
-                    }
-                },
-
-                setContentClass: function (contentClass) {
-                    this._contentClass = contentClass;
-                    if (!this._titleShown) {
-                        this._addInfoClass(this._contentClass);
-                    }
-                },
-
-                _showTitle: function (evt) {
-                    this._addInfoClass(this._titleClass);
-                    this._displayElement(this._infoTitleContainer, true);
-                    this._displayElement(this._infoBodyContainer, false);
-                    this._displayElement(this._infoCloseButtonContainer, false);
-                    this._showTitleTooltip(true);
-                    this._setCursorToPointer(this._infoContainer, true);
-                    this._titleShown = true;
-                },
-
-                _showContent: function (evt) {
-                    this._addInfoClass(this._contentClass);
-                    this._displayElement(this._infoTitleContainer, false);
-                    this._displayElement(this._infoBodyContainer, true);
-                    this._displayElement(this._infoCloseButtonContainer, true);
-                    this._showTitleTooltip(false);
-                    this._setCursorToPointer(this._infoContainer, false);
-                    this._titleShown = false;
-                },
-
-                _showTitleTooltip: function (showIt) {
-                    this._infoContainer.setAttribute('Title', (showIt) ? this._infoTitleTooltip : '');
-                },
-
-                _displayElement: function (element, displayIt) {
-                    element.style.display = (displayIt) ? '' : 'none';
-                },
-
-                _setCursorToPointer: function (element, setIt) {
-                    element.style.cursor = (setIt) ? 'pointer' : '';
-                },
-
-                _addInfoClass: function (classToAdd) {
-                    L.DomUtil.setClass(this._infoContainer, this._infoContainerClasses + ' ' + classToAdd);
-                }
-            });
-
-            L.control.info = function (opts) {
-                return new L.Control.Info(opts);
-            }
-
-            var title = [];
-            var tooltip = [];
-            var text = [];
-            var titleClass = [];
-            var contentClass = [];
-
-            var i = 0;
-            var j = 0;
-
-            title[0] = 'COVID-19 Testing Facilities';
-            tooltip[0] = 'Information on the purpose of this map';
-            text[0] = '<p style="margin-bottom: 6pt;"><b><font size="5">The COVID-19 Testing Facilities Map</font></b></p><b>This map is work in progress. Please contact me via GitHub if you want to help.</b>'
-            titleClass[0] = 'titleStyle1';
-            contentClass[0] = 'contentStyle1';
-
-            /*
-            title[1] = 'Ut enim ad minim';
-            tooltip[1] = 'Ut enim ad minim veniam';
-            text[1] = '<p style="margin-bottom: 6pt;"><b><i>Ut enim ad minim</b></i></p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-            titleClass[1] = 'titleStyle2';
-            contentClass[1] = 'contentStyle2';
-            */
-
-            myInfoControl = L.control.info({
-                position: 'topright',
-                title: title[0],
-                titleTooltip: tooltip[0],
-                titleClass: titleClass[0],
-                contentClass: contentClass[0]
-            });
-
-            myInfoControl.setContent(text[0]);
-
-            myInfoControl.addTo(map);
-
-            /*
-            function changeText() {
-                i = ++i % 2;
-                myInfoControl.setTitle(title[i]);
-                myInfoControl.setTitleTooltip(tooltip[i]);
-                myInfoControl.setContent(text[i]);
-            }
-            function changeStyle() {
-                j = ++j % 2;
-                myInfoControl.setTitleClass(titleClass[j]);
-                myInfoControl.setContentClass(contentClass[j]);
-            }
-            */
-
-
-            for (var i = 0; i < testSites.length; i++) {
-                marker = new L.marker([testSites[i][1], testSites[i][2]],
-                    { icon: testIcon },
-                    { opacity: 0.5 }
-                )
-                    .bindPopup(testSites[i][0])
-                    .addTo(map);
-            }
-
-        </script>
-
-        <!-- scripts popup -->
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
-        <script src="disclaimer.js"></script>
+        // standard leaflet map setup
+        var map = L.map('map');
+        map.setView([46, 8], 6);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 18,
+            attribution: 'Map data &copy; OpenStreetMap contributors'
+        }).addTo(map);
         
-        <!-- End scripts popup -->
+        
 
-        <!-- scripts sidebar -->
-        <script src="js/sidebar.js"></script>
     
-        <script>
-    
-            // create the sidebar instance and add it to the map
-            var sidebar = L.control.sidebar({ container: 'sidebar' })
-                .addTo(map)
-                .open('home');
-    
-            // add panels dynamically to the sidebar
-    
-            /* Remove options buttons
-            sidebar
-                .addPanel({
-                    id:   'js-api',
-                    tab:  '<i class="fa fa-gear"></i>',
-                    title: 'JS API',
-                    pane: '<p>The Javascript API allows to dynamically create or modify the panel state.<p/><p><button onclick="sidebar.enablePanel(\'mail\')">enable mails panel</button><button onclick="sidebar.disablePanel(\'mail\')">disable mails panel</button></p><p><button onclick="addUser()">add user</button></b>',
-                })
-                // add a tab with a click callback, initially disabled
-                .addPanel({
-                    id:   'mail',
-                    tab:  '<i class="fa fa-envelope"></i>',
-                    title: 'Messages',
-                    button: function() { alert('opened via JS callback') },
-                    disabled: true,
-                })
-    
-            // be notified when a panel is opened
-            sidebar.on('content', function (ev) {
-                switch (ev.id) {
-                    case 'autopan':
-                    sidebar.options.autopan = true;
-                    break;
-                    default:
-                    sidebar.options.autopan = false;
-                }
-            });
-            */
-    
-            /* User Function
-            var userid = 0
-            function addUser() {
-                sidebar.addPanel({
-                    id:   'user' + userid++,
-                    tab:  '<i class="fa fa-user"></i>',
-                    title: 'User Profile ' + userid,
-                    pane: '<p>user ipsum dolor sit amet</p>',
-                });
+        // create the sidebar instance and add it to the map
+        var sidebar = L.control.sidebar({ container: 'sidebar' })
+            .addTo(map)
+            .open('home');
+
+        // add panels dynamically to the sidebar
+
+        /* Remove options buttons
+        sidebar
+            .addPanel({
+                id:   'js-api',
+                tab:  '<i class="fa fa-gear"></i>',
+                title: 'JS API',
+                pane: '<p>The Javascript API allows to dynamically create or modify the panel state.<p/><p><button onclick="sidebar.enablePanel(\'mail\')">enable mails panel</button><button onclick="sidebar.disablePanel(\'mail\')">disable mails panel</button></p><p><button onclick="addUser()">add user</button></b>',
+            })
+            // add a tab with a click callback, initially disabled
+            .addPanel({
+                id:   'mail',
+                tab:  '<i class="fa fa-envelope"></i>',
+                title: 'Messages',
+                button: function() { alert('opened via JS callback') },
+                disabled: true,
+            })
+
+        // be notified when a panel is opened
+        sidebar.on('content', function (ev) {
+            switch (ev.id) {
+                case 'autopan':
+                sidebar.options.autopan = true;
+                break;
+                default:
+                sidebar.options.autopan = false;
             }
-            */
-        </script>
-        <!-- End scripts sidebar -->
+        });
+        */
+
+        /* User Function
+        var userid = 0
+        function addUser() {
+            sidebar.addPanel({
+                id:   'user' + userid++,
+                tab:  '<i class="fa fa-user"></i>',
+                title: 'User Profile ' + userid,
+                pane: '<p>user ipsum dolor sit amet</p>',
+            });
+        }
+        */
+
+        
+
+            function onEachFeature(feature, layer) {
+                var popupContent =
+                    "<h2>" + feature.properties.name + "</h2>" + "<p>" +
+                    "<b>Address</b><br>" + feature.properties.address + "<p>" + 
+                    "<b>Contact</b><br>" + feature.properties.contact + "<p>" +
+                    "<b>Web</b><br>" + feature.properties.web + "<p>" +
+                    "<b>Comment</b><br>" + feature.properties.comment;
+
+		if (feature.properties && feature.properties.popupContent) {
+			popupContent += feature.properties.popupContent;
+		}
+
+		layer.bindPopup(popupContent);
+	}
+
+
+            L.geoJSON(testSitesCHE, {
+
+                style: function (feature) {
+                    return feature.properties && feature.properties.style;
+                },
+
+                onEachFeature: onEachFeature,
+
+                pointToLayer: function (feature, latlng) {
+                    return L.marker(latlng, {icon: testIcon
+                    });
+                }
+            }).addTo(map);
+
+        
+
+    </script>
+
 
 
 </body>
-
 </html>
