@@ -69,6 +69,62 @@ var testSitesCHE =
           47.043969390128844
         ]
       }
-    }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tisch Hospital",
+        "address": "5550 1st Avenue, 10016 New York, United States",
+        "contact": "001 646 929 7800",
+        "web": "https://nyulangone.org/locations/tisch-hospital",
+        "comment": "Private Hospital"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-73.973806,40.742344]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kantonsspital Baselland Bruderholz",
+        "address": "4101 Bruderholz, CH",
+        "contact": "+41 61 436 36 36",
+        "web": "https://www.ksbl.ch/das-ksbl/standorte/der-standort-bruderholz",
+        "comment": "-"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [7.581535,47.528431]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "CIBIO - Centre for integrative biology",
+        "address": "via Sommarive n. 9, 38123, Povo (TN), Italy",
+        "contact": "+39 0461 28 1809 - 3995 - 1622 - 3706",
+        "web": "https://www.cibio.unitn.it/13/about-us",
+        "comment": "Only on medical request"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [11.150628,46.068399]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Praxis Matthias Kessler",
+        "address": "Würzenbachstrasse 3, 6006 Luzern, Switzerland",
+        "contact": "+41 41 370 33 05",
+        "web": "dr-kessler.ch",
+        "comment": "by appointment, only very sick people are tested"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [8.341837,47.054689]
+      }
+    },
   ]
 }
