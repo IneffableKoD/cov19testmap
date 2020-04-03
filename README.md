@@ -63,14 +63,14 @@ Thanks and shoutouts to:
 
 | Status | Task                            | Who   |
 | ------ | ------------------------------- | ----- |
-| 0      | Update README.md                |       |
-| 0      | Make website in popup hyperlink |       |
+| 1      | Update README.md                |       |
+| 1      | Make website in popup hyperlink |       |
 | 0      | Add layer "unverified"          |       |
 | 0      | Add layer selection on map      |       |
 | 1      | Add Credits                     | Ineff |
 | 0      | Add all Swiss facilities        |       |
 | 0      | Add other facilities            |       |
-| 0      | Replace info top right with sidebar (https://github.com/noerw/leaflet-sidebar-v2)            |       |
+| 1      | Replace info top right with sidebar (https://github.com/noerw/leaflet-sidebar-v2)            |       |
 
 
 ## Resources 
