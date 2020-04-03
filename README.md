@@ -5,10 +5,9 @@
 | Project name        | Cov10TestMap                                                 |
 | :------------------ | ------------------------------------------------------------ |
 | Title               | A COVID-19 Testing Facilities Map                            |
-| Devpost link        | https://devpost.com/software/cov19testmap/                   |
-| GitHub link         | https://github.com/IneffableKoD/cov19testmap                 |
 | Product demo        | http://ineff.ch/cov19testmap/                                |
 | Demo video          | https://www.youtube.com/watch?v=6Rj032PXzMc                  |
+| Demo video          | https://www.ineff.ch/2020-04-03-The-COVID-19-Testing-Facility-Map/                  |
 | Subject area        | 0020_Corona test processes/ diagnosis                        |
 | Beneficiary         | #CodevsCOVID19 Hackathon                                     |
 | Team members        | IneffableKoD aka FY Zehnder                                  |
