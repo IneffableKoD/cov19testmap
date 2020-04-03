@@ -9,11 +9,8 @@
 | Demo video          | https://www.youtube.com/watch?v=6Rj032PXzMc                  |
 | Demo video          | https://www.ineff.ch/2020-04-03-The-COVID-19-Testing-Facility-Map/                  |
 | Subject area        | 0020_Corona test processes/ diagnosis                        |
-| Beneficiary         | #CodevsCOVID19 Hackathon                                     |
-| Team members        | IneffableKoD aka FY Zehnder                                  |
 | Dissemination level | Public                                                       |
-| Submission          | Monday, 30.03.2020, 17.00                                    |
-| Version             | 0.2                                                          |
+| Version             | 0.3                                                          |
 | Text license        | This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License |
 | Software license    | MIT License                                                  |
 | Status              | Work in progres                                              |
