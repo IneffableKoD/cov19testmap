@@ -10,7 +10,7 @@ I want to encourage _everyone_ to contribute to this mapping effort. There is al
 
 In case you are new to GitHub or the open-source space at all, contributing might seem a little scary at first. Don't hesitate! The reason we use great tools like GitHub is to ensure that you can participate without doing any harm. Just follow this [great tutorial](https://github.com/firstcontributions/first-contributions). 
 
-If you have any questions regarding the content of that file, feel free to contact me on Keybase. 
+If you have any questions regarding the content of that file, feel free to contact me on Keybase.
 
 ## How To Contribute To:
 
