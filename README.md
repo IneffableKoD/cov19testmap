@@ -59,7 +59,7 @@ Thanks and shoutouts to:
 | Status | Task                            | Who   |
 | ------ | ------------------------------- | ----- |
 | 1      | Update README.md                |       |
-| 1      | Make website in popup hyperlink |       |
+| 1      | Fix  popup                      |       |
 | 0      | Add layer "unverified"          |       |
 | 0      | Add layer selection on map      |       |
 | 1      | Add Credits                     | Ineff |
