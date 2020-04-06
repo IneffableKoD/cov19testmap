@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>COVID-19 Testing Facilities</title>
 
@@ -11,7 +11,7 @@
         crossorigin="" />
 
     <link rel="stylesheet" href="css/sidebar.css">
-    
+
     <link rel="stylesheet" href="css/disclaimer.css">
 
     <style>
@@ -20,7 +20,9 @@
             margin: 0;
         }
 
-        html, body, #map {
+        html,
+        body,
+        #map {
             height: 100%;
             font: 10pt "Helvetica Neue", Arial, Helvetica, sans-serif;
         }
@@ -33,30 +35,35 @@
     </style>
 
 </head>
+
 <body>
 
-        <div id="boxes">
-                <div style="top: 50%; left: 50%; display: none;" id="dialog" class="window"> 
-                <div id="san">
-                <a href="#" class="close agree"><img src="img/btn_close.png" width="25" style="float:right; margin-right: -11px; margin-top: -12px;"></a>
+    <div id="boxes">
+        <div style="top: 50%; left: 50%; display: none;" id="dialog" class="window">
+            <div id="san">
+                <a href="#" class="close agree"><img src="img/btn_close.png" width="25"
+                        style="float:right; margin-right: -11px; margin-top: -12px;"></a>
                 <br>
                 <h1>DISCLAIMER</h1>
                 <br>
-                The information on this map is not accurate nor does it represent any medical or safety advice. This site is only for education purposes.
+                The information on this map is not accurate nor does it represent any medical or safety advice. This
+                site is only for education purposes.
                 <br><br>
-                This map was created by CEVEN.hack. For more information on the project please visit <a href="https://github.com/IneffableKoD/cov19testmap">the repository</a>. 
+                This map was created by CEVEN.hack. For more information on the project please visit <a
+                    href="https://github.com/IneffableKoD/cov19testmap">the repository</a>.
                 <br><br>
                 <a href="https://bag-coronavirus.ch/">Offical FOPH information</a>
                 <br><br>
                 <img src="img/stayhome.png" width="450">
-                </div>
-                </div>
-                <div style="width: 2478px; font-size: 32pt; color:white; height: 1202px; display: none; opacity: 0.4;" id="mask"></div>
-                </div>
+            </div>
+        </div>
+        <div style="width: 2478px; font-size: 32pt; color:white; height: 1202px; display: none; opacity: 0.4;"
+            id="mask"></div>
+    </div>
 
-                <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script> 
-                <script src="js/disclaimer.js"></script>
-    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+    <script src="js/disclaimer.js"></script>
+
 
     <!-- optionally define the sidebar content via HTML markup -->
     <div id="sidebar" class="leaflet-sidebar collapsed">
@@ -77,63 +84,74 @@
 
         <!-- panel content -->
         <div class="leaflet-sidebar-content">
-                <div class="leaflet-sidebar-pane" id="home">
-                    <h1 class="leaflet-sidebar-header">
-                        COVID-19 Testing Facilities Info
-                        <span class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></span>
-                    </h1>    
-                    <h2>Welcome</h2>
-                    <p>This map was created for two main purposes (still exploring):</p>
-                    <ul>
-                        <li>Consumer information on where to get tested for COVID-19 (usually after a screening call)</li>
-                        <li>Provide a tool to plan further testing sites/facilities</li>
-                    </ul>
-    
-                    <p class="boxtext">Please be aware that most information here is either found by the author or crowdsourced. We do not guarantee any accuracy.</p>
-                    <p class="boxtext">All data on this page, including the page source are open-source. You can find all information on the <a href="https://github.com/IneffableKoD/cov19testmap">GitHub repository</a>.</p>
-                    <p class="boxtext">A huge THANK YOU goes out to all those that contributed to this project either by providing code or crowdsourcing testing facilities!</p>
-                    <p class="boxtext">If you want to contribute, please feel free to enter testing facilities in the <a href="https://docs.google.com/forms/d/e/1FAIpQLSfpChekpNXQyKVn9tOCvnQmEW5T_VMQmtV5cAVMucnCyJGDGw/viewform?usp=sf_link">Google Form</a> or by submitting a pull request.</p>
-                </div>
+            <div class="leaflet-sidebar-pane" id="home">
+                <h1 class="leaflet-sidebar-header">
+                    COVID-19 Testing Facilities Info
+                    <span class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></span>
+                </h1>
+                <h2>Welcome</h2>
+                <p>This map was created for two main purposes (still exploring):</p>
+                <ul>
+                    <li>Consumer information on where to get tested for COVID-19 (usually after a screening call)</li>
+                    <li>Provide a tool to plan further testing sites/facilities</li>
+                </ul>
 
-            
-                <div class="leaflet-sidebar-pane" id="autopan">
-                        <h1 class="leaflet-sidebar-header">
-                            Made by
-                            <span class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></span>
-                        </h1>
-                        <p>
-                            This map was created by CEVEN.hack – the <a href="https://www.ceven.tech/">CEVEN</a> hackathon team. 
-                        </p>
-                        <p>
-                            The main contributor and project initiator is <a href="http://ineff.ch/">IneffableKoD</a> aka <a href="https://www.linkedin.com/in/yannickzehnder/">Yannick Zehnnder</a>.
-                        </p>
-                    </div>
-            
-        
+                <p class="boxtext">Please be aware that most information here is either found by the author or
+                    crowdsourced. We do not guarantee any accuracy.</p>
+                <p class="boxtext">All data on this page, including the page source are open-source. You can find all
+                    information on the <a href="https://github.com/IneffableKoD/cov19testmap">GitHub repository</a>.</p>
+                <p class="boxtext">A huge THANK YOU goes out to all those that contributed to this project either by
+                    providing code or crowdsourcing testing facilities!</p>
+                <p class="boxtext">If you want to contribute, please feel free to enter testing facilities in the <a
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSfpChekpNXQyKVn9tOCvnQmEW5T_VMQmtV5cAVMucnCyJGDGw/viewform?usp=sf_link">Google
+                        Form</a> or by submitting a pull request.</p>
+            </div>
+
+
+            <div class="leaflet-sidebar-pane" id="autopan">
+                <h1 class="leaflet-sidebar-header">
+                    Made by
+                    <span class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></span>
+                </h1>
+                <p>
+                    This map was created by CEVEN.hack – the <a href="https://www.ceven.tech/">CEVEN</a> hackathon team.
+                </p>
+                <p>
+                    The main contributor and project initiator is <a href="http://ineff.ch/">IneffableKoD</a> aka <a
+                        href="https://www.linkedin.com/in/yannickzehnder/">Yannick Zehnnder</a>.
+                </p>
+            </div>
+
+
 
             <div class="leaflet-sidebar-pane" id="messages">
-                <h1 class="leaflet-sidebar-header">Messages<span class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></span></h1>
+                <h1 class="leaflet-sidebar-header">Messages<span class="leaflet-sidebar-close"><i
+                            class="fa fa-caret-left"></i></span></h1>
             </div>
         </div>
     </div>
 
-    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
-        crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" crossorigin=""></script>
     <script src="js/sidebar.js"></script>
 
-    <script src="geojson/testsitesCHE.js" type="text/javascript"></script>
+    <script src="geojson/testsitesCrdSrc.js" type="text/javascript"></script>
+    <script src="geojson/hospitalsCHEoverpassexport.js" type="text/javascript"></script>
     <div id="map"></div>
     <script>
 
-var testIcon = L.icon({
-                iconUrl: 'img/facilityicon.png',
+        var testIcon = L.Icon.extend({
+            options: {
                 //shadowUrl: 'iconshadow.png',
                 iconSize: [32, 32],   // size of the icon
                 //shadowSize:   [50, 64], // size of the shadow
                 //iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
                 //shadowAnchor: [4, 62],  // the same for the shadow
                 //popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
-            });
+            }
+        });
+
+        var testFacility = new testIcon({ iconUrl: 'img/facilityicon.png' }),
+            hospitalIcon = new testIcon({ iconUrl: 'img/hospitalicon.png' });
 
         // standard leaflet map setup
         var map = L.map('map');
@@ -142,10 +160,8 @@ var testIcon = L.icon({
             maxZoom: 18,
             attribution: 'Map data &copy; OpenStreetMap contributors'
         }).addTo(map);
-        
-        
 
-    
+
         // create the sidebar instance and add it to the map
         var sidebar = L.control.sidebar({ container: 'sidebar' })
             .addTo(map)
@@ -194,43 +210,70 @@ var testIcon = L.icon({
         }
         */
 
-        
 
-            function onEachFeature(feature, layer) {
-                var popupContent =
-                    "<h2>" + feature.properties.name + "</h2>" + "<p>" +
-                    "<b>Address</b><br>" + feature.properties.address + "<p>" + 
-                    "<b>Contact</b><br>" + feature.properties.contact + "<p>" +
-                    "<b>Web</b><br>" + feature.properties.web + "<p>" +
-                    "<b>Comment</b><br>" + feature.properties.comment;
+        function onEachFeature(feature, layer) {
+            var popupContent =
+                "<h2>" + feature.properties.name + "</h2>" + "<p>" +
+                "<b>Address</b><br>" + feature.properties.address + "<p>" +
+                "<b>Contact</b><br>" + feature.properties.contact + "<p>" +
+                "<b>Web</b><br>" + feature.properties.web + "<p>" +
+                "<b>Comment</b><br>" + feature.properties.comment;
 
-		if (feature.properties && feature.properties.popupContent) {
-			popupContent += feature.properties.popupContent;
-		}
+            if (feature.properties && feature.properties.popupContent) {
+                popupContent += feature.properties.popupContent;
+            }
 
-		layer.bindPopup(popupContent);
-	}
+            layer.bindPopup(popupContent);
+        }
 
 
-            L.geoJSON(testSitesCHE, {
+        var testsitesCrdSrc = L.geoJson(testsitesCrdSrc, {
 
-                style: function (feature) {
-                    return feature.properties && feature.properties.style;
-                },
+            style: function (feature) {
+                return feature.properties && feature.properties.style;
+            },
 
-                onEachFeature: onEachFeature,
+            onEachFeature: onEachFeature,
 
-                pointToLayer: function (feature, latlng) {
-                    return L.marker(latlng, {icon: testIcon
-                    });
-                }
-            }).addTo(map);
+            pointToLayer: function (feature, latlng) {
+                return L.marker(latlng, {
+                    icon: testFacility
+                });
+            }
+        }).addTo(map);
 
-        
 
+        var hospitalsCHEoverpassexport = L.geoJson(hospitalsCHEoverpassexport, {
+            style: function (feature) {
+                return feature.properties && feature.properties.style;
+            },
+
+            onEachFeature: onEachFeature,
+
+            pointToLayer: function (feature, latlng) {
+                return L.marker(latlng, {
+                    icon: hospitalIcon
+                });
+            }
+        }).addTo(map);
+
+
+        //Layer Control
+
+        var baseMaps = {
+            'Open StreetMap': map
+        };
+
+        var overlayMaps = {
+            'Testing Facilities': testsitesCrdSrc,
+            'Hospitals': hospitalsCHEoverpassexport
+        };
+
+        L.control.layers(baseMaps, overlayMaps).addTo(map);
     </script>
 
 
 
 </body>
+
 </html>
