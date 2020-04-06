@@ -206,7 +206,6 @@ var testsitesCZE =
         ]
       }
     },
-    /*
     {
       "type": "Feature",
       "properties": {
@@ -219,12 +218,11 @@ var testsitesCZE =
       "geometry": {
         "type": "Point",
         "coordinates": [
-          17.198334,
-          50.227779
+          0.198334,
+          0.227779
         ]
       }
     },
-    */
    {
     "type": "Feature",
     "properties": {
@@ -631,6 +629,40 @@ var testsitesCZE =
       "coordinates": [
         14.469388,
         48.960825
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Nemocnice Tábor",
+      "address": "Tř. kpt. Jaroše 2000, 390 03 Tábor, Czechia",
+      "contact": "775859455",
+      "web": "https://koronavirus.mzcr.cz/nemocnice-tabor",
+      "comment": "Provozní doba	8 – 14.30 hodin. Upřesnění polohy	Vlevo před vstupem pro pěší do Nemocnice Tábor, a. s. Příjezd osobním automobilem bude ve stejném směru, jako příjezd k hlavnímu vjezdu do nemocnice a před závorami odbočí řidič doprava k přístřešku."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        14.653845,
+        49.417932
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Nemocnice Strakonice",
+      "address": "Radomyšlská 336, 386 29 Strakonice, Czechia",
+      "contact": "725861309",
+      "web": "https://koronavirus.mzcr.cz/nemocnice-strakonice",
+      "comment": "Provozní doba	pondělí – pátek 7.30 – 14.30 hodin, sobota – neděle 9 – 11 hodin. Upřesnění polohy	Přístup k odběrové místnosti umožněn skrz tzv. technický vjezd do areálu nemocnice v ulici MUDr. Hradeckého. Odběrová místnost i příchod k ní je označen a nachází se ve vzdálenosti cca 80 m od tohoto vchodu. Objednání pacientů na čas přes objednávací systém nemocnice."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        13.907042,
+        49.265575
       ]
     }
   },
