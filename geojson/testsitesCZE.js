@@ -666,5 +666,447 @@ var testsitesCZE =
       ]
     }
   },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Nemocnice Jindřichův Hradec",
+      "address": "U Nemocnice 380/III, 377 38 Jindřichův Hradec, Czechia",
+      "contact": "728230031",
+      "web": "https://koronavirus.mzcr.cz/nemocnice-jindrichuv-hradec",
+      "comment": "Provozní doba	10 – 15 hodin. Upřesnění polohy	Stan je umístěn ve spodní části areálu nemocnice, do odběrového centra je nutno dodržovat přesně vymezené trasy dle značení NJH (vjezd C z ulice U Nemocnice)."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        15.003776,
+        49.139165
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Nemocnice Prachatice, a. s.",
+      "address": "Nebahovská 1015, 383 01 Prachatice, Czechia",
+      "contact": "607059517",
+      "web": "https://koronavirus.mzcr.cz/nemocnice-prachatice/",
+      "comment": "Provozní doba	8 – 14 hodin. Upřesnění polohy	u zadního vchodu."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        14.010788,
+        49.007153
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Nemocnice Písek, a. s.",
+      "address": "Karla Čapka 589, 39701 Písek, Czechia",
+      "contact": "773751644",
+      "web": "https://koronavirus.mzcr.cz/nemocnice-pisek/",
+      "comment": "Provozní doba	8 – 12 hodin. Upřesnění polohy	budova bývalé mikrobiologie (za budovou KHS ) – zadní vstup, vjezd a vstup přes zaměstnanecké parkoviště za KHS, pro pěší možno také z Budějovické ulice."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        14.156108,
+        49.302915
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Nemocnice Český Krumlov",
+      "address": "Nemocniční 429, 38101 Český Krumlov, Czechia",
+      "contact": "775808068",
+      "web": "https://koronavirus.mzcr.cz/nemocnice-cesky-krumlov",
+      "comment": "Provozní doba	8 – 11 hodin. Upřesnění polohy	Automobilem nebo pěšky vrátnicí nemocnice => po silnici vlevo k vyznačenému místu. Odběr bude proveden před bývalou lékárnou (dříve také dětského oddělení) – pavilon J."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        14.326557,
+        48.811609
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Fakultní nemocnice Plzeň",
+      "address": "Edvarda Beneše 1128/13, 305 99 Plzeň-Bory, Czechia",
+      "contact": "377402657",
+      "web": "https://koronavirus.mzcr.cz/fakultni-nemocnice-plzen",
+      "comment": "Provozní doba	8 – 13 hodin. Upřesnění polohy	infekční klinika."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        13.379206,
+        49.762760
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Rokycanská nemocnice, a. s",
+      "address": "Voldušská 750/II, 337 01 Rokycany, Czechia",
+      "contact": "371762345",
+      "web": "https://koronavirus.mzcr.cz/rokycanska-nemocnice",
+      "comment": "Provozní doba	8 – 16 hodin. Upřesnění polohy	Odběrové místo je v zadní části areálu nemocnice. Z Voldušské ulice je příjezd k místu viditelně označen. Pacienti jsou povinni přijet k odběru osobním vozem (ne pěšky nebo hromadnou dopravou)."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        13.604133,
+        49.749118
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Domažlická nemocnice, a. s.",
+      "address": "Kozinova 292, 344 01 Domažlice, Czechia",
+      "contact": "775863655",
+      "web": "https://koronavirus.mzcr.cz/domazlicka-nemocnice",
+      "comment": "Provozní doba	8 – 16 hodin. Upřesnění polohy	Odběrové místo je v parkové části areálu nemocnice. Z Kozinovy ulice je příjezd k místu viditelně označen."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        12.907939,
+        49.438092
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Nemocnice Jihlava, p. o.",
+      "address": "Vrchlického 59, 586 33 Jihlava, Czechia",
+      "contact": "703863153",
+      "web": "https://koronavirus.mzcr.cz/nemocnice-jihlava/",
+      "comment": "Provozní doba	7 – 19 hodin. Upřesnění polohy	parkoviště před hlavním vchodem."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        15.570912,
+        49.397598
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Nemocnice Havlíčkův Brod, p. o.",
+      "address": "Husova 2624, 580 01 Havlíčkův Brod, Czechia",
+      "contact": "-",
+      "web": "https://koronavirus.mzcr.cz/nemocnice-havlickuv-brod/",
+      "comment": "Provozní doba	7 – 17 hodin."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        15.570742,
+        49.609110
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Nemocnice Třebíč, p. o.",
+      "address": "Purkyňovo nám. 133/2, 67401 Třebíč, Czechia",
+      "contact": "604208417",
+      "web": "https://koronavirus.mzcr.cz/nemocnice-trebic",
+      "comment": "Provozní doba	po – pá 7 – 17 hodin, so – ne 8 – 13 hodin. Upřesnění polohy	Areál nemocnice, parkoviště u budovy N, vjezd do areálu zadní branou z ulice Janáčkovo stromořadí."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        15.889447,
+        49.212205
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Nemocnice Pardubice",
+      "address": "Kyjevská 44, 532 03 Pardubice, Czechia",
+      "contact": "-",
+      "web": "https://koronavirus.mzcr.cz/nemocnice-pardubice/",
+      "comment": "-"
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        15.789787,
+        50.029744
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Litomyšlská nemocnice",
+      "address": "E. Purkyně 652, 570 14 Litomyšl, Czechia",
+      "contact": "-",
+      "web": "https://koronavirus.mzcr.cz/litomyslska-nemocnice/",
+      "comment": "Upřesnění polohy	umístěno v provizoriu před nemocnicí."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.312399,
+        49.865106
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Fakultní nemocnice Brno Bohunice",
+      "address": "Jihlavská 20, 62500 Brno, Czechia",
+      "contact": "532231111",
+      "web": "https://koronavirus.mzcr.cz/fakultni-nemocnice-brno-bohunice",
+      "comment": "Provozní doba	7 – 19 hodin. Upřesnění polohy	příjezd pouze vlastním vozem z ulice Kamenice, drive-in."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.570778,
+        49.175545
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Nemocnice Břeclav",
+      "address": "U Nemocnice 3066/1, 690 74 Břeclav, Czechia",
+      "contact": "519315111",
+      "web": "https://koronavirus.mzcr.cz/nemocnice-breclav/",
+      "comment": "Provozní doba	8 – 16 hodin. Upřesnění polohy	příjezd vlastním vozem „drive-in“."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.878966,
+        48.753294
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Fakultní nemocnice Hradec Králové",
+      "address": "Sokolská 581, 500 05 Hradec Králové, Czechia",
+      "contact": "495836004, 702284857",
+      "web": "https://koronavirus.mzcr.cz/fakultni-nemocnice-hradec-kralove",
+      "comment": "Provozní doba	9 – 12 hodin (vč. soboty a neděle). Upřesnění polohy	parkoviště před Ústavem klinické biochemie a diagnostiky – budova č. 22 (před samotným areálem FN)."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        15.829296,
+        50.200716
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Oblastní nemocnice Náchod – nemocnice Náchod",
+      "address": "Purkyňova 446, 547 01 Náchod, Czechia",
+      "contact": "607029093",
+      "web": "https://koronavirus.mzcr.cz/nemocnice-nachod",
+      "comment": "Provozní doba	8 – 12 hodin. Upřesnění polohy	příjezd vlastním vozem „drive-in“ do dolního areálu z ul. Bartoňova."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.167468,
+        50.410779
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Oblastní nemocnice Náchod – nemocnice Rychnov nad Kněžnou",
+      "address": "Jiráskova 506, 516 23 Rychnov nad Kněžnou, Czechia",
+      "contact": "607066175",
+      "web": "https://koronavirus.mzcr.cz/nemocnice-rychnov-nad-kneznou/",
+      "comment": "Provozní doba	8 – 12 hodin. Upřesnění polohy	příjezd vlastním vozem „drive-in“ z ulice Jiráskova bočním vjezdem."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        16.270820,
+        50.168003
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Městská nemocnice, a. s., Dvůr Králové nad Labem",
+      "address": "Vrchlického 1504, 544 01 Dvůr Králové nad Labem, Czechia",
+      "contact": "499300611",
+      "web": "https://koronavirus.mzcr.cz/mestska-nemocnice-dvur-kralove-nad-labem/",
+      "comment": "Provozní doba	denně 7 – 11 hodin. Upřesnění polohy	u vjezdu do areálu."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        15.815774,
+        50.448559
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Krajská nemocnice Liberec, a. s.",
+      "address": "Husova 10, 460 01 Liberec, Czechia",
+      "contact": "485312931",
+      "web": "https://koronavirus.mzcr.cz/krajska-nemocnice-liberec",
+      "comment": "Provozní doba	7 – 19 hodin. Upřesnění polohy	Kristiánová ul. (plocha u bývalé automyčky, spodní areál Krajské nemocnice Liberec – samostatný vjezd z Husovy ul. do Kristiánovy ulice – přes závoru, kterou otevírá odběrová služba přes ovládač, odbočit naproti KEBAB restauraci na Husově ul.; červený stan  s nápisem STACIONÁRNÍ ODBĚROVÉ MÍSTO)."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        15.063355,
+        50.770506
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "MMN, a. s., nemocnice Jilemnice",
+      "address": "Metyšova 465, 514 01 Jilemnice, Czechia",
+      "contact": "-",
+      "web": "https://koronavirus.mzcr.cz/nemocnice-jilemnice/",
+      "comment": "Provozní doba	9 – 11 hodin. Upřesnění polohy	stan v areálu nemocnice na parkovišti pro invalidy vedle hospodářské budovy."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        15.499563,
+        50.611457
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Nemocnice s poliklinikou Česká Lípa",
+      "address": "Purkyňova 1849, 470 01 Česká Lípa, Czechia",
+      "contact": "725838047",
+      "web": "https://koronavirus.mzcr.cz/nemocnice-s-poliklinikou-ceska-lipa",
+      "comment": "Provozní doba	9 – 11 hodin. Upřesnění polohy	odběrové místo je zřízeno ve stanu za budovou bývalé Krajské hygienické stanice (OHES), staré zahradnictví (tzv. „skleník“)."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        14.548834,
+        50.685871
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Nemocnice Jablonec nad Nisou, p. o.",
+      "address": "Nemocniční 15, 466 01 Jablonec nad Nisou, Czechia",
+      "contact": "607055941",
+      "web": "https://koronavirus.mzcr.cz/nemocnice-jablonec-nad-nisou",
+      "comment": "Provozní doba	8 – 15 hodin. Upřesnění polohy	v areálu nemocnice, vchod do pavilonu ORL a ortopedie."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        15.159664,
+        50.729317
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Karlovarská krajská nemocnice, a. s.",
+      "address": "Bezručova 1190/19, 360 01 Karlovy Vary, Czechia",
+      "contact": "602956681",
+      "web": "https://koronavirus.mzcr.cz/karlovarska-krajska-nemocnice/",
+      "comment": "Provozní doba	8 – 16 hodin, ev. dle objednání. Upřesnění polohy	v dolní části areálu nemocnice."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        12.875233,
+        50.232195
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Nemocnice Cheb",
+      "address": "K Nemocnici 1204, 350 03 Cheb, Czechia",
+      "contact": "722207436",
+      "web": "https://koronavirus.mzcr.cz/nemocnice-cheb",
+      "comment": "Provozní doba	8 – 14 hodin. Upřesnění polohy	parkoviště před budovou A."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        12.366973,
+        50.069936
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Krajská nemocnice T. Bati, a. s.",
+      "address": "Havlíčkovo nábřeží 600, 762 75 Zlín, Czechia",
+      "contact": "730575535",
+      "web": "https://koronavirus.mzcr.cz/krajska-nemocnice-t-bati/",
+      "comment": "Provozní doba	7 – 19 hodin. Upřesnění polohy	parkoviště za budovou Zdravotnické záchranné služby před heliportem."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        17.694056,
+        49.230111
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Kroměřížská nemocnice, a. s.",
+      "address": "Havlíčkova 660/69, 767 01 Kroměříž, Czechia",
+      "contact": "573322473",
+      "web": "https://koronavirus.mzcr.cz/kromerizska-nemocnice",
+      "comment": "Provozní doba	pondělí – pátek 7 – 15 hodin. Upřesnění polohy	odběrová buňka u výjezdu z areálu nemocnice."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        17.380708,
+        49.293380
+      ]
+    }
+  },
   ]
 }
