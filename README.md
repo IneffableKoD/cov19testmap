@@ -12,7 +12,7 @@
 | Version             | 0.3                                                          |
 | Text license        | This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License |
 | Software license    | MIT License                                                  |
-| Status              | Work in progres                                              |
+| Status              | Work in progress                                              |
 
 ![Screenshot Map](img/screener_map.png)
 
@@ -29,13 +29,13 @@ CEVEN.hack is a hackathon team by CEVEN Decentralized GeoTech.
 
 ## Story
 
-COVID-19 test are hard to run. There is a lack of test-sets and a lack of organization. The flow of those that are supposed to get tested is hard to organize, congestion of people waiting to be tested can lead to unnecessary exposure/risk of infection.
+COVID-19 tests are hard to run. There is a lack of test-sets and a lack of organization. The flow of those that are supposed to get tested is hard to organize, congestion of people waiting to be tested can lead to unnecessary exposure/risk of infection.
 
 A map displaying the testing facilities helps to plan and organize the testing facilities. 
 
 ## Design / Development
 
-The COVID-19 Testing Facilities Map uses Leaflet with OSM tiles. Everything is built on open-source, easily available and easy to manipulate software/code.
+The COVID-19 Testing Facilities Map uses Leaflet with OSM tiles. Everything is built on open-source, readily available, and easy to manipulate software/code.
 
 ## Whats Next?
 
