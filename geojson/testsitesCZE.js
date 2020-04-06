@@ -395,5 +395,244 @@ var testsitesCZE =
       ]
     }
   },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Laboratoře Diagnostika s. r. o.",
+      "address": "Novosedlické nám. 1, 400 03 Ústí nad Labem, Czechia",
+      "contact": "475315919",
+      "web": "https://koronavirus.mzcr.cz/laboratore-diagnostika/",
+      "comment": "Provozní doba	7 – 12 hodin ."
+    },
+    "geometry": {
+      "type": "Point",
+      /*coordinates not confirmed*/
+      "coordinates": [
+        14.060138,
+        50.649463
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Masarykova nemocnice v Ústí nad Labem, o. z.",
+      "address": "Sociální péče 3316/12a, 401 13 Ústí nad Labem, Czechia",
+      "contact": "477111111",
+      "web": "https://koronavirus.mzcr.cz/masarykova-nemocnice",
+      "comment": "Provozní doba	8 – 16 hodin. Upřesnění polohy	parkoviště u pavilonu O."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        14.022375,
+        50.681287
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Nemocnice Teplice, o. z.",
+      "address": "SDuchcovská 962/53, 415 29 Teplice, Czechia",
+      "contact": "417519111, 603392210",
+      "web": "https://koronavirus.mzcr.cz/nemocnice-teplice",
+      "comment": "Provozní doba	8 – 16 hodin. Upřesnění polohy	plocha u pavilonu nových operačních sálů z ulice Anglická."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        13.811703,
+        50.636856
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Nemocnice Děčín, o. z.",
+      "address": "U Nemocnice 1, 405 99 Děčín, Czechia",
+      "contact": "412705111",
+      "web": "https://koronavirus.mzcr.cz/nemocnice-decin",
+      "comment": "Provozní doba	8 – 16 hodin. Upřesnění polohy	plocha u pavilonu J."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        14.225202,
+        50.781305
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Nemocnice Most, o. z.",
+      "address": "J. E. Purkyně 270/5, 434 64 Most, Czechia",
+      "contact": "603392209",
+      "web": "https://koronavirus.mzcr.cz/nemocnice-most",
+      "comment": "Provozní doba	8 – 16 hodin. Upřesnění polohy	plocha vedle pavilonu A."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        13.627354,
+        50.507726
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Nemocnice Chomutov, o. z.",
+      "address": "Kochova 1185, 430 12 Chomutov, Czechia",
+      "contact": "603392206",
+      "web": "https://koronavirus.mzcr.cz/nemocnice-chomutov",
+      "comment": "Provozní doba	8 – 16 hodin. Upřesnění polohy	plocha za pavilonem D, vjezd z ulice Beethovenova."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        13.411297,
+        50.455216
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "MUDr. Vratislav Prejzek, s. r. o.",
+      "address": "Nám. Míru 344, 407 77 Šluknov, Czechia",
+      "contact": "412386274",
+      "web": "https://koronavirus.mzcr.cz/mudr-vratislav-prejzek/",
+      "comment": "Provozní doba	pondělí a středa 7 – 11 hodin, úterý a čtvrtek 13 – 17 hodin, pátek 7 – 9 hodin. Upřesnění polohy	pouze drive-in; lékař vyjde z ordinace."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        14.453161,
+        51.003099
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Oblastní nemocnice Kladno, a. s.",
+      "address": "Vančurova 1548, 272 59 Kladno, Czechia",
+      "contact": "-",
+      "web": "https://koronavirus.mzcr.cz/oblastni-nemocnice-kladno",
+      "comment": "Provozní doba	7 – 19 hodin. Upřesnění polohy	stan v areálu nemocnice na parkovišti před Niederleho pavilonem."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        14.087766,
+        50.141259
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Oblastní nemocnice Kolín, a. s.",
+      "address": "Žižkova 146, 280 02 Kolín 3, Czechia",
+      "contact": "732245928",
+      "web": "https://koronavirus.mzcr.cz/oblastni-nemocnice-kolin",
+      "comment": "Provozní doba	7 – 19 hodin. Upřesnění polohy	izolační prostor – buňka s příslušenstvím, která je umístěna za budovou interního oddělení, vpravo od centrální recepce a je zřetelně označena COVID-19."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        15.197487,
+        50.020522
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Oblastní nemocnice Mladá Boleslav, a. s.",
+      "address": "Tř. Václava Klementa 147, 293 01 Mladá Boleslav, Czechia",
+      "contact": "326743636",
+      "web": "https://koronavirus.mzcr.cz/oblastni-nemocnice-mlada-boleslav",
+      "comment": "Provozní doba	7 – 19 hodin. Upřesnění polohy	vstup z Palackého ulice."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        14.911889,
+        50.417764
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Oblastní nemocnice Kolín, a.s., Nemocnice Kutná Hora",
+      "address": "Vojtěšská 237, 284 01 Kutná Hora, Czechia",
+      "contact": "601379864",
+      "web": "https://koronavirus.mzcr.cz/oblastni-nemocnice-kolin-a-s-nemocnice-kutna-hora/",
+      "comment": "Provozní doba	8 – 14.30 hodin. Upřesnění polohy	bývalý dispečink DZS – před garážemi a prádelnou, přístupové cesty a místo jsou viditelně označeny."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        15.253492,
+        49.946157
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Oblastní nemocnice Příbram, a. s.",
+      "address": "Podbrdská, 261 95 Příbram 5, Czechia",
+      "contact": "702240563",
+      "web": "https://koronavirus.mzcr.cz/oblastni-nemocnice-pribram",
+      "comment": "Provozní doba	pondělí – pátek 8 – 12 hodin. Upřesnění polohy	stan před areálem nemocnice A2 na parkovišti u hlavní vrátnice."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        13.988460,
+        49.674884
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Mělnická zdravotní, a. s.",
+      "address": "Pražská 528/29, 276 01 Mělník, Czechia",
+      "contact": "315639253",
+      "web": "https://koronavirus.mzcr.cz/melnicka-zdravotni",
+      "comment": "Provozní doba	nonstop. Upřesnění polohy	infekční ambulance, pavilon W, 4. patro."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        14.484132,
+        50.347138
+      ]
+    }
+  },
+  {
+    "type": "Feature",
+    "properties": {
+      "name": "Nemocnice České Budějovice",
+      "address": "B. Němcové 585/54, 370 01 České Budějovice, Czechia",
+      "contact": "702249199",
+      "web": "https://koronavirus.mzcr.cz/nemocnice-ceske-budejovice",
+      "comment": "Provozní doba	9 – 16 hodin. Upřesnění polohy	před infekčním oddělením, vjezd hlavní bránou nebo vstup pro pěší."
+    },
+    "geometry": {
+      "type": "Point",
+      "coordinates": [
+        14.469388,
+        48.960825
+      ]
+    }
+  },
   ]
 }
