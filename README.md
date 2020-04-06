@@ -18,7 +18,7 @@
 
 ## Short description
 
-There is no map displaying the facilites that offer COVID-19 tests. COVID-19 Testing Facilities Map is an attempt to create a map where those facilities can be mapped. The map serves two puproses:
+There is no map displaying the facilities that offer COVID-19 tests. COVID-19 Testing Facilities Map is an attempt to create a map where those facilities can be mapped. The map serves two purposes:
 
 1. Information for consumers
 2. Planning tool for establishing new facilities
