@@ -51,6 +51,7 @@ Thanks and shoutouts to:
 - Malcolm Maclean (https://leanpub.com/u/d3noob)
 - The Leaflet team
 - The OSM community
+- https://github.com/schoolofdata-ch/swiss-hospital-data
 
 ------
 
