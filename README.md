@@ -4,7 +4,7 @@
 
 ## A COVID-19 Testing Facilities Map
 
-| Project name        | Cov10TestMap                                                 |
+| Project name        | Cov19TestMap                                                 |
 | :------------------ | ------------------------------------------------------------ |
 | Title               | A COVID-19 Testing Facilities Map                            |
 | Product demo        | http://ineff.ch/cov19testmap/                                |
@@ -63,18 +63,15 @@ Thanks and shoutouts to:
 | ------ | ------------------------------- | ----- |
 | 1      | Update README.md                |       |
 | 1      | Fix  popup                      |       |
-| 0      | Add layer "unverified"          |       |
-| 0      | Add layer selection on map      |       |
+| 1      | Add layer "unverified"          |       |
+| 1      | Add layer selection on map      |       |
 | 1      | Add Credits                     | Ineff |
 | 0      | Add all Swiss facilities        |       |
 | 0      | Add other facilities            |       |
 | 1      | Replace info top right with sidebar (https://github.com/noerw/leaflet-sidebar-v2)            |       |
 
-
-## Resources 
-
-Custom Leaflet L.Control control https://jsfiddle.net/TomazicM/rqu3nvLj/
-
 ------
 
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/H2H21K2BH)
+
+[Support me on Gitcoin](gitcoin.co/grants/700/covid-19-testing-facilities-map)
