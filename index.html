@@ -32,6 +32,16 @@
             text-align: justify;
             color: #AAA;
         }
+
+        th {
+            text-align: left;
+            padding: 15px;
+        }
+
+        td, tr {
+            padding: 5px;
+        }
+
     </style>
 
 </head>
@@ -63,6 +73,24 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
     <script src="js/disclaimer.js"></script>
 
+    <!-- language packs -->
+    <script>
+        var language; 
+
+        function getLanguage() {
+        (localStorage.getItem('language') == null) ? setLanguage('en') : false;
+        $.ajax({ 
+        url:  '/language/' +  localStorage.getItem('language') + '.json', 
+        dataType: 'json', async: false, dataType: 'json', 
+        success: function (lang) { language = lang } });
+        }
+        
+        function setLanguage(lang) {
+        console.log(lang);
+        localStorage.setItem('language', lang);
+        reloadContent();
+        }
+        </script>
 
     <!-- optionally define the sidebar content via HTML markup -->
     <div id="sidebar" class="leaflet-sidebar collapsed">
@@ -84,47 +112,42 @@
         <!-- panel content -->
         <div class="leaflet-sidebar-content">
             <div class="leaflet-sidebar-pane" id="home">
-                <h1 class="leaflet-sidebar-header">
-                    COVID-19 Testing Facilities Info
+                <h1 id="info_title" class="leaflet-sidebar-header">
                     <span class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></span>
                 </h1>
-                <h2>Welcome</h2>
-                <p>This map was created for two main purposes (still exploring):</p>
-                <ul>
-                    <li>Consumer information on where to get tested for COVID-19 (usually after a screening call)</li>
-                    <li>Provide a tool to plan further testing sites/facilities</li>
-                </ul>
-                Icon legend: <br><br>
-                <img src="img/facilityicon.png" alt="Testing Facility Icon" width="32" height="32"> = COVID-19 testing facility
-                <br>
-                <img src="img/hospitalicon.png" alt="Health Facility Icon" width="32" height="32"> = Unconfirmed medical institution
+                
+                <div id="info_welcome"></div>
+                <p id="info_iconlegend"></p>
+                <table style="width:100%">
+                    <tr>
+                      <td width=50 ><img src="img/facilityicon.png" alt="Testing Facility Icon" width="32" height="32"></th>
+                      <td id="info_icon1"></th>
+                    </tr>
+                    <tr>
+                      <td width=50 ><img src="img/hospitalicon.png" alt="Health Facility Icon" width="32" height="32"></td>
+                      <td id="info_icon2"></td>
+                    </tr>
+                  </table> 
 
 
-
-                <p class="boxtext">Please be aware that most information here is either found by the author or
-                    crowdsourced. We do not guarantee any accuracy.</p>
-                <p class="boxtext">All data on this page, including the page source are open-source. You can find all
-                    information on the <a href="https://github.com/IneffableKoD/cov19testmap">GitHub repository</a>.</p>
-                <p class="boxtext">A huge THANK YOU goes out to all those that contributed to this project either by
-                    providing code or crowdsourcing testing facilities!</p>
-                <p class="boxtext">If you want to contribute, please feel free to enter testing facilities in the <a
-                        href="https://docs.google.com/forms/d/e/1FAIpQLSfpChekpNXQyKVn9tOCvnQmEW5T_VMQmtV5cAVMucnCyJGDGw/viewform?usp=sf_link">Google
-                        Form</a> or by submitting a pull request.</p>
+                <p id="info_para1" class="boxtext"></p>
+                <p id="info_para2" class="boxtext"></p>
+                <p id="info_para3" class="boxtext"></p>
+                <p id="info_para4" class="boxtext"></p>
+                <p id="info_languageTitle" class="boxtext"></p>
+                <p class="boxtext">
+                    <a href="#" onclick="setLanguage('en')"><img src="img/US_flag.png" alt="English" width="64" height="45"></a>
+                    <a href="#" onclick="setLanguage('cz')"><img src="img/CZ_flag.png" alt="Czech" width="64" height="45"></a>
+                </p>
             </div>
 
 
             <div class="leaflet-sidebar-pane" id="autopan">
-                <h1 class="leaflet-sidebar-header">
-                    Made by
+                <h1 id="madeby_title" class="leaflet-sidebar-header">
                     <span class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></span>
                 </h1>
-                <p>
-                    This map was created by CEVEN.hack – the <a href="https://www.ceven.tech/">CEVEN</a> hackathon team.
-                </p>
-                <p>
-                    The main contributor and project initiator is <a href="http://ineff.ch/">IneffableKoD</a> aka <a
-                        href="https://www.linkedin.com/in/yannickzehnder/">Yannick Zehnnder</a>.
-                </p>
+                <p id="madeby_created"></p>
+                <p id="madeby_contributors"></p>
             </div>
 
 
@@ -144,6 +167,40 @@
     <script src="geojson/testsitesCZE.js" type="text/javascript"></script>
 
     <div id="map"></div>
+
+    
+
+    <!-- language packs -->
+    <script>
+
+        function reloadContent() {
+            getLanguage();
+            
+            // filling in the variable for the defined language
+            // !! requires dynamic update - looping through he elements based on the JSON structure
+            document.getElementById("info_title").innerHTML = language.info_title;
+            document.getElementById("info_welcome").innerHTML = language.info_welcome;
+            document.getElementById("info_iconlegend").innerHTML = language.info_iconlegend;
+            document.getElementById("info_icon1").innerHTML = language.info_icon1;
+            document.getElementById("info_icon2").innerHTML = language.info_icon2;
+            document.getElementById("info_para1").innerHTML = language.info_para1;
+            document.getElementById("info_para2").innerHTML = language.info_para2;
+            document.getElementById("info_para3").innerHTML = language.info_para3;
+            document.getElementById("info_para4").innerHTML = language.info_para4;
+            document.getElementById("info_languageTitle").innerHTML = language.info_languageTitle;
+            document.getElementById("madeby_title").innerHTML = language.madeby_title;
+            document.getElementById("madeby_created").innerHTML = language.madeby_created;
+            document.getElementById("madeby_contributors").innerHTML = language.madeby_contributors;
+        };
+
+        $(document).ready(function(){
+            reloadContent();
+            });
+
+       </script>
+
+
+
     <script>
 
         var testIcon = L.Icon.extend({
