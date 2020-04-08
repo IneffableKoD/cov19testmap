@@ -6,7 +6,7 @@
 - Added first canonical data set (Czech Republic). 
 - Added CHANGELOG.md
 - Created "Data Sources" and added datasources.md. 
-- Added language selection (CZ, EN) including new structure for language files.
+- Added language selection (CZ, EN) including a new structure for language files.
 - Removed To-Do from README.md (will be listed in issues from now on).
 
 ## v0.3
