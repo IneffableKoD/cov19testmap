@@ -1,0 +1,15 @@
+{ 
+    "info_title": "COVID-19 Testing Facilities Info",
+    "info_welcome": "<h2>Welcome</h2><p>This map was created for two main purposes (still exploring):</p><ul><li>Consumer information on where to get tested for COVID-19 (usually after a screening call)</li><li>Provide a tool to plan further testing sites/facilities</li></ul>",
+    "info_iconlegend": "Icon legend:",
+    "info_icon1": " = COVID-19 testing facility",
+    "info_icon2": " = Unconfirmed medical institution",
+    "info_para1": "Please be aware that most information here is either found by the author or crowdsourced. We do not guarantee any accuracy.",
+    "info_para2": "All data on this page, including the page source are open-source. You can find all information on the <a href=\"https://github.com/IneffableKoD/cov19testmap\">GitHub repository</a>.",
+    "info_para3": "A huge THANK YOU goes out to all those that contributed to this project either by providing code or crowdsourcing testing facilities!",
+    "info_para4": "If you want to contribute, please feel free to enter testing facilities in the <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSfpChekpNXQyKVn9tOCvnQmEW5T_VMQmtV5cAVMucnCyJGDGw/viewform?usp=sf_link\">Google Form</a> or by submitting a pull request.",
+    "info_languageTitle": "Select Language:",
+    "madeby_title": "Made by",
+    "madeby_created": "This map was created by CEVEN.hack – the <a href=\"https://www.ceven.tech/\">CEVEN</a> hackathon team.",
+    "madeby_contributors": "The main contributor and project initiator is <a href=\"http://ineff.ch/\">IneffableKoD</a> aka <a href=\"https://www.linkedin.com/in/yannickzehnder/\">Yannick Zehnnder</a>."
+}

@@ -1,0 +1,15 @@
+{ 
+    "info_title": "COVID-19 - Testovací stanoviště",
+    "info_welcome": "<h2>Vítejte</h2><p>Tato mapa byla vytvořena tak, aby sloužila dvěma hlavním účelům (stále ještě zkoumáme další možnosti):</p><ul><li>Informace pro pacienty, kde je možno podstoupit test na COVID-19 (po telefonické konzultaci s lékařem)</li><li>Poskytnout informace potřebné pro plánování dalších stanovišť</li></ul>",
+    "info_iconlegend": "Legenda ke značkám v mapě:",
+    "info_icon1": " = COVID-19 testovací stanoviště",
+    "info_icon2": " = Neverifikované lékařské zarízení",
+    "info_para1": "Vezměte prosím na vědomí, že většina informací o testovacích zařízeních byla sesbírána autorem nebo pomocí crouwdsourcingu. Autoři žádným způsobem negarantují aktuálnost a správnost publikovaných dat.",
+    "info_para2": "Všechna data použita v apikaci i samotná aplikace jsou open-source. Bližší informace můžete nalězt v tomto projektu na GitHubu: <a href=\"https://github.com/IneffableKoD/cov19testmap\">GitHub repository</a>.",
+    "info_para3": "Velmi děkujeme všem, kteří se na projektu podíleli a přispěli časem, pomocí při sběru dat, poskytnutím dat a nebo pomocí s vývojem aplikace!",
+    "info_para4": "V případě, že nám chcete pomoci se sběrem dat, můžete nám poslat informace o testovacím zažízení pomocí tohoto formuláře <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSfpChekpNXQyKVn9tOCvnQmEW5T_VMQmtV5cAVMucnCyJGDGw/viewform?usp=sf_link\">Google Form</a> a nebo prostřednictvím GitHubu vytvořením příslušného pull requestu.",
+    "info_languageTitle": "Výběr jazyka:",
+    "madeby_title": "Vytvořili",
+    "madeby_created": "Tato aplikace byla vytvořena týmem CEVEN.hack – <a href=\"https://www.ceven.tech/\">CEVEN</a> hackathon team.",
+    "madeby_contributors": "Hlavním tvůrcem a iniciátorem projektu je <a href=\"http://ineff.ch/\">IneffableKoD</a> vlastním jménem <a href=\"https://www.linkedin.com/in/yannickzehnder/\">Yannick Zehnnder</a>."
+}
