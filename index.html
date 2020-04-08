@@ -80,7 +80,7 @@
         function getLanguage() {
         (localStorage.getItem('language') == null) ? setLanguage('en') : false;
         $.ajax({ 
-        url:  '/language/' +  localStorage.getItem('language') + '.json', 
+        url:  'language/' +  localStorage.getItem('language') + '.json', 
         dataType: 'json', async: false, dataType: 'json', 
         success: function (lang) { language = lang } });
         }
@@ -177,7 +177,7 @@
             getLanguage();
             
             // filling in the variable for the defined language
-            // !! requires dynamic update - looping through he elements based on the JSON structure
+            // !! requires dynamic update - looping through the elements based on the JSON structure
             document.getElementById("info_title").innerHTML = language.info_title;
             document.getElementById("info_welcome").innerHTML = language.info_welcome;
             document.getElementById("info_iconlegend").innerHTML = language.info_iconlegend;
