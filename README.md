@@ -74,4 +74,4 @@ Thanks and shoutouts to:
 
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/H2H21K2BH)
 
-[Support me on Gitcoin](gitcoin.co/grants/700/covid-19-testing-facilities-map)
+[Support me on Gitcoin](https://gitcoin.co/grants/700/covid-19-testing-facilities-map)
