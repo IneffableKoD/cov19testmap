@@ -138,5 +138,22 @@ var testsitesZAF =
         ]
       }
     },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Parkhurst Municiple Clinic",
+        "address": "11 5th Ave, Parkhurst, Randburg, 2193, South Africa",
+        "contact": "+27 11 788 1526",
+        "web": "https://parkhurstvillage.com",
+        "comment": "-"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.015809,
+          -26.137153
+        ]
+      }
+    },
   ]
 }
