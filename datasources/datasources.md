@@ -25,6 +25,16 @@ out center;
 
 Crowdsourced (various sources, including a [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSfpChekpNXQyKVn9tOCvnQmEW5T_VMQmtV5cAVMucnCyJGDGw/viewform?usp=sf_link)).
 
+## South Africa
+
+News outlets:
+
+https://northeasterntribune.co.za/264190/covid-19-city-joburg-identifies-several-clinics-screen-coronavirus/
+
+Clinics:
+
+https://parkhurstvillage.com 
+
 ## Misc
 
 From the crowdsourcing on the [Google Form](https://docs.google.com/forms/d/e/1FAIpQLSfpChekpNXQyKVn9tOCvnQmEW5T_VMQmtV5cAVMucnCyJGDGw/viewform?usp=sf_link).
