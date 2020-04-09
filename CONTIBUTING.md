@@ -45,6 +45,10 @@ You must enter the coordinates in the right order (otherwise, your marker that i
 
 Do not remove the "comma" at the end of the block; otherwise the next block won't work. 
 
+## Data Sources
+
+Please pay attention to the quality of your data sources. If you add facilities to the map, also add your sources to the "Data Sources" folder (you can also link them in the [datasources.md](https://github.com/IneffableKoD/cov19testmap/tree/master/datasources) file).
+
 ### Map Functions
 
 TBD
