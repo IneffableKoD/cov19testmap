@@ -3,6 +3,16 @@
 
 <head>
     <title>COVID-19 Testing Facilities</title>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163208355-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-163208355-1');
+    </script>
 
 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
@@ -166,7 +176,7 @@
     <script src="geojson/hospitalsCHEoverpassexport.js" type="text/javascript"></script>
     <script src="geojson/testsitesCZE.js" type="text/javascript"></script>
     <script src="geojson/testsitesZAF.js" type="text/javascript"></script>
-
+    <script src="geojson/antibodysitesCHE.js" type="text/javascript"></script>
 
     <div id="map"></div>
 
@@ -217,7 +227,8 @@
         });
 
         var testFacility = new testIcon({ iconUrl: 'img/facilityicon.png' }),
-            hospitalIcon = new testIcon({ iconUrl: 'img/hospitalicon.png' });
+            hospitalIcon = new testIcon({ iconUrl: 'img/hospitalicon.png' }),
+            antibodyFacility = new testIcon({ iconUrl: 'img/antibodyfacilityicon.png' });
 
         // standard leaflet map setup
         var map = L.map('map');
@@ -351,6 +362,19 @@
             }
         }).addTo(map);
 
+        var antibodysitesCHE = L.geoJson(antibodysitesCHE, {
+            style: function (feature) {
+                return feature.properties && feature.properties.style;
+            },
+
+            onEachFeature: onEachFeature,
+
+            pointToLayer: function (feature, latlng) {
+                return L.marker(latlng, {
+                    icon: antibodyFacility
+                });
+            }
+        }).addTo(map);
 
         //Layer Control
 
@@ -360,6 +384,7 @@
 
         var overlayMaps = {
             'Testing Facilities': testsitesCrdSrc, 
+            'CHE Antibodytests': hospitalsCHEoverpassexport,
             'CZE Testing Facilities': testsitesCZE,
             'ZAF Testing Facilities': testsitesZAF,
             'CHE Hospitals': hospitalsCHEoverpassexport
