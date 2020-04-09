@@ -1,6 +1,6 @@
 # CEVEN.hack Contribution to #CodevsCOVID19 Hackathon
 
-[**Gitcoin Grant**](https://gitcoin.co/grants/700/covid-19-testing-facilities-map)
+[**Support our Gitcoin grant**](https://gitcoin.co/grants/700/covid-19-testing-facilities-map)
 
 ## A COVID-19 Testing Facilities Map
 
