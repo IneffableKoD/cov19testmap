@@ -2,7 +2,7 @@
 
 | Version | Date       | Author       |
 | ------- | ---------- | ------------ |
-| 1.0     | 03.04.2020 | Ineffablekod |
+| 1.1     | 09.04.2020 | IneffableKoD |
 
 First and foremost, thank you for your interest in this project. 
 
