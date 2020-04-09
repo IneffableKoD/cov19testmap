@@ -1,4 +1,9 @@
 { 
+    "zoomto_data": {
+        "lat": "49.963882",
+        "lon": "15.483261",
+        "zoomlevel": "7"
+    },
     "info_title": "COVID-19 - Testovací stanoviště",
     "info_welcome": "<h2>Vítejte</h2><p>Tato mapa byla vytvořena tak, aby sloužila dvěma hlavním účelům (stále ještě zkoumáme další možnosti):</p><ul><li>Informace pro pacienty, kde je možno podstoupit test na COVID-19 (po telefonické konzultaci s lékařem)</li><li>Poskytnout informace potřebné pro plánování dalších stanovišť</li></ul>",
     "info_iconlegend": "Legenda ke značkám v mapě:",
