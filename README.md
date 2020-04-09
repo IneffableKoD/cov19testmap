@@ -11,7 +11,7 @@
 | Demo video          | https://www.youtube.com/watch?v=6Rj032PXzMc                  |
 | Demo video          | https://www.ineff.ch/2020-04-03-The-COVID-19-Testing-Facility-Map/                  |
 | Dissemination level | Public                                                       |
-| Version             | 0.3                                                          |
+| Version             | 0.4                                                          |
 | Text license        | This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License |
 | Software license    | MIT License                                                  |
 | Status              | Work in progress                                              |
@@ -57,21 +57,6 @@ Thanks and shoutouts to:
 
 ------
 
-## TO-DO
-
-| Status | Task                            | Who   |
-| ------ | ------------------------------- | ----- |
-| 1      | Update README.md                |       |
-| 1      | Fix  popup                      |       |
-| 1      | Add layer "unverified"          |       |
-| 1      | Add layer selection on map      |       |
-| 1      | Add Credits                     | Ineff |
-| 0      | Add all Swiss facilities        |       |
-| 0      | Add other facilities            |       |
-| 1      | Replace info top right with sidebar (https://github.com/noerw/leaflet-sidebar-v2)            |       |
-
-------
-
 [![ko-fi](https://www.ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/H2H21K2BH)
 
-[Support me on Gitcoin](gitcoin.co/grants/700/covid-19-testing-facilities-map)
+[Support me on Gitcoin](https://gitcoin.co/grants/700/covid-19-testing-facilities-map)
