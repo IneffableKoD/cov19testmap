@@ -2,7 +2,7 @@
     "zoomto_data": {
         "lat": "23",
         "lon": "-42",
-        "zoomlevel": "4"
+        "zoomlevel": "3"
     },
     "info_title": "COVID-19 Testing Facilities Info",
     "info_welcome": "<h2>Welcome</h2><p>This map was created for two main purposes (still exploring):</p><ul><li>Consumer information on where to get tested for COVID-19 (usually after a screening call)</li><li>Provide a tool to plan further testing sites/facilities</li></ul>",
