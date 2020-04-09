@@ -186,24 +186,13 @@
             getLanguage();
             
             // filling in the variable for the defined language
-            // !! requires dynamic update - looping through the elements based on the JSON structure
-            document.getElementById("info_title").innerHTML = language.info_title;
-            document.getElementById("info_welcome").innerHTML = language.info_welcome;
-            document.getElementById("info_iconlegend").innerHTML = language.info_iconlegend;
-            document.getElementById("info_icon1").innerHTML = language.info_icon1;
-            document.getElementById("info_icon2").innerHTML = language.info_icon2;
-            document.getElementById("info_para1").innerHTML = language.info_para1;
-            document.getElementById("info_para2").innerHTML = language.info_para2;
-            document.getElementById("info_para3").innerHTML = language.info_para3;
-            document.getElementById("info_para4").innerHTML = language.info_para4;
-            document.getElementById("info_languageTitle").innerHTML = language.info_languageTitle;
-            document.getElementById("madeby_title").innerHTML = language.madeby_title;
-            document.getElementById("madeby_created").innerHTML = language.madeby_created;
-            document.getElementById("madeby_contributors").innerHTML = language.madeby_contributors;
-
-            //for (x in myObj) {
-                //document.getElementById("demo").innerHTML += myObj[x];
-            //}
+             for (x in language) {
+                if (x != "zoomto_data") {
+                    if (document.getElementById(x) != null ) {
+                        document.getElementById(x).innerHTML = language[x];
+                    }
+                }
+            }
         };
 
         $(document).ready(function(){
