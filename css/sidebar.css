@@ -25,6 +25,10 @@
       width: 460px;
       max-width: 460px; } }
 
+.leaflet-sidebar .flag-selector img{
+  border: 1px solid #cdcdcd;
+}
+
 .leaflet-sidebar-left {
   left: 0; }
   @media (min-width: 768px) {
