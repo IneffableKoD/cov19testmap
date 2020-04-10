@@ -2,7 +2,7 @@
 
 ## Czech Republic 
 
-Official data from https://koronavirus.mzcr.cz/seznam-odberovych-center/.
+Canonical data from https://koronavirus.mzcr.cz/seznam-odberovych-center/.
 
 ## Switzerland
 
@@ -34,6 +34,14 @@ https://northeasterntribune.co.za/264190/covid-19-city-joburg-identifies-several
 Clinics:
 
 https://parkhurstvillage.com 
+
+Reddit (crowdsourced): 
+
+https://www.reddit.com/r/johannesburg/comments/fycjq8/looking_for_help_to_list_covid19_testing/
+
+## Poland
+
+Canonical data from: https://www.gov.pl/web/koronawirus/lista-szpitali
 
 ## Misc
 
