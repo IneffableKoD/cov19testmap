@@ -155,5 +155,23 @@ var testsitesZAF =
         ]
       }
     },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dis-Chem Pharmacy Athol Oaklands",
+        "address": "BluBird Shopping Centre, 23 Fort St, Birnam, Johannesburg, 2196, South Africa",
+        "contact": "+27 11 430 0600",
+        "web": "https://www.dischem.co.za/athol-oaklands-pharmacy",
+        "comment": "-",
+        "source": "Reddit"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.065167,
+          -26.129754
+        ]
+      }
+    },
   ]
 }
