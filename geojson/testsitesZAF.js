@@ -173,5 +173,23 @@ var testsitesZAF =
         ]
       }
     },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ampath Pickering Street Laboratory",
+        "address": "13 Pickering Street, Newton Park, Port Elizabeth, South Africa",
+        "contact": "+27 41 396 9513",
+        "web": "https://www.ampath.co.za/covid-19-collection-sites",
+        "comment": "Forms required - https://www.ampath.co.za/covid-19-patients-resources",
+        "source": "Reddit"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.065167,
+          -26.129754
+        ]
+      }
+    },
   ]
 }
