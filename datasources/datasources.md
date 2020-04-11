@@ -35,6 +35,8 @@ Clinics:
 
 https://parkhurstvillage.com 
 
+https://www.ampath.co.za/covid-19-collection-sites
+
 Reddit (crowdsourced): 
 
 https://www.reddit.com/r/johannesburg/comments/fycjq8/looking_for_help_to_list_covid19_testing/
