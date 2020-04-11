@@ -180,8 +180,7 @@ var testsitesZAF =
         "address": "13 Pickering Street, Newton Park, Port Elizabeth, South Africa",
         "contact": "+27 41 396 9513",
         "web": "https://www.ampath.co.za/covid-19-collection-sites",
-        "comment": "Forms required - https://www.ampath.co.za/covid-19-patients-resources",
-        "source": "Reddit"
+        "comment": "Forms required - https://www.ampath.co.za/covid-19-patients-resources"
       },
       "geometry": {
         "type": "Point",
