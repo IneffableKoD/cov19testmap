@@ -186,8 +186,8 @@ var testsitesZAF =
       "geometry": {
         "type": "Point",
         "coordinates": [
-          28.065167,
-          -26.129754
+          25.571405,
+          -33.947491 
         ]
       }
     },
