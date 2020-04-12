@@ -1,0 +1,20 @@
+{ 
+    "zoomto_data": {
+        "lat": "-30.55",
+        "lon": "22.93",
+        "zoomlevel": "5"
+    },
+    "info_title": "Imininingwane Yezindawo Zokuhlola i-COVID-19 ",
+    "info_welcome": "<h2>Uyemukelwa</h2><p>Le mephu yadalelwa izinhloso ezimbili eziyinhloko (isacwaninga):</p><ul><li>Imininingwane yabathengi yokuthi uvivinyelwa kuphi i-COVID-19(imvamisa ngemuva kwekholi yokuhlola)</li><li>Nikeza ithuluzi lokuhlela ezinye izindawo zokuhlola / izakhiwo</li></ul>",
+    "info_iconlegend": "Inganekwane yesithonjana:",
+    "info_icon1": " = Isikhungo sokuhlola i-COVID-19",
+    "info_icon2": " = Isikhungo sezokwelapha esingaqinisekisiwe",
+    "info_para1": "Uyacelwa ukuthi wazi ukuthi imininingwane eminingi lapha itholakala ngumbhali noma i-crowdourcedced. Asikuqinisekisi noma yikuphi ukunemba.",
+    "info_para2": "Yonke imininingwane ekuleli khasi, kufaka nomthombo wekhasi ingumthombo ovulekile. Ungathola lonke ulwazi ku-le <a href=\"https://github.com/IneffableKoD/cov19testmap\">GitHub repository</a>.",
+    "info_para3": "SITHANDA UKUBONGA kakhulu kubo bonke abanikele kule projekthi ngokunikeza amakhodi noma izindawo zokuhlola zabantu abaningi!",
+    "info_para4": "Uma ufuna ukufaka isandla, sicela uzizwe ukhululekile ukungena ezindaweni zokuhlola ku <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSfpChekpNXQyKVn9tOCvnQmEW5T_VMQmtV5cAVMucnCyJGDGw/viewform?usp=sf_link\">Google Form</a> noma ngokuthumela isicelo sokudonsa.",
+    "info_languageTitle": "Khetha Ulimi:",
+    "madeby_title": "Yenziwe ngu",
+    "madeby_created": "Le mephu yadalwa CEVEN.hack – the <a href=\"https://www.ceven.tech/\">CEVEN</a> iqembu leHackathon.",
+    "madeby_contributors": "Umnikeli ophambili kanye nomqalisi wephrojekthi <a href=\"http://ineff.ch/\">IneffableKoD</a> aka <a href=\"https://www.linkedin.com/in/yannickzehnder/\">Yannick Zehnnder</a>."
+}
