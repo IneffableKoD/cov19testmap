@@ -319,7 +319,7 @@ var testsitesZAF =
         "name": "Charlotte Maxeke Hospital",
         "address": " Parktown, Johannesburg, 2193, South Africa",
         "contact": "+27 11 488 4911",
-        "web": "https://en.wikipedia.org/wiki/Charlotte_Maxeke_Johannesburg_Academic_Hospital",
+        "web":"https://cmjahed.co.za/services/",
         "comment":"No appointment needed prior. Doctors Covid-19 test referral note is a requirement",
         "source": "https://sacoronavirus.co.za/contact/"
       },
@@ -418,7 +418,7 @@ var testsitesZAF =
         "name": "Rob Ferreira Hospital",
         "address": "Corner Piet Retief Street and Madiba Drive, Nelspruit, Mpumalanga, South Africa",
         "contact": "	+27 13 741 6100",
-        "web": "http://doctors-hospitals-medical-cape-town-south-africa.blaauwberg.net/hospitals_clinics_state_hospitals/state_public_hospitals_clinics_mpumalanga_south_africa/rob_ferreira_hospital_nelspruit_mbombela_mpumalanga_south_africa",
+        "web":"https://www.facebook.com/pages/Rob-Ferreira-Hospital/195310537176952",
         "comment":"No appointment needed prior. Doctors Covid-19 test referral note is a requirement",
         "source": "https://sacoronavirus.co.za/contact/"
       },
@@ -458,7 +458,7 @@ var testsitesZAF =
         "name": "Klerksdorp Hospital",
         "address": "Neserhof, Klerksdorp, 2571, South Africa",
         "contact": "+27 18 406 4600",
-        "web": "http://doctors-hospitals-medical-cape-town-south-africa.blaauwberg.net/hospitals_clinics_state_hospitals/state_public_hospitals_clinics_north_west_province_south_africa/klerksdorp_hospital_klerksdorp_north_west_south_africa",
+        "web": "https://www.klerksdorptsheponghospital.org/",
         "comment":"No appointment needed prior. Doctors Covid-19 test referral note is a requirement",
         "source": "https://sacoronavirus.co.za/contact/"
       },
@@ -477,7 +477,7 @@ var testsitesZAF =
         "name": "Kimberly Hospital",
         "address": "Du Toitspan Road, Belgravia, Kimberley, Northern Cape, South Africa",
         "contact": " 	+27 53 802 2124",
-        "web": "http://doctors-hospitals-medical-cape-town-south-africa.blaauwberg.net/hospitals_clinics_state_hospitals/state_public_hospitals_clinics_northern_cape_south_africa/kimberley_hospital_complex_kimberley_northern_cape_south_africa",
+        "web": "https://www.travelground.com/attractions/kimberley-hospital-complex",
         "comment":"No appointment needed prior. Doctors Covid-19 test referral note is a requirement",
         "source": "https://sacoronavirus.co.za/contact/"
       },
