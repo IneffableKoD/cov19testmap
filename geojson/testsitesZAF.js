@@ -176,17 +176,119 @@ var testsitesZAF =
     {
       "type": "Feature",
       "properties": {
+        "name": "Ampath East London",
+        "address": "58 St James Street, Southernwood, East London, South Africa",
+        "contact": "+27 43 703 4318",
+        "web": "https://www.ampath.co.za/covid-19-patients-resources",
+        "comment": "Drive through collection site"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.904451,
+          -32.999755
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ampath Grahamstown",
+        "address": "Peppergrove Mall Shop 26, Grahamstown, South Africa",
+        "contact": "+27 46 622 9757",
+        "web": "https://www.ampath.co.za/covid-19-patients-resources",
+        "comment": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.522380,
+          -33.308474
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ampath Jeffreys Bay",
+        "address": "Cnr Da Gama & Schelde Street, Jeffreys Bay, South Africa",
+        "contact": "+27 42 293 1759",
+        "web": "https://www.ampath.co.za/covid-19-patients-resources",
+        "comment": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          24.923060,
+          -34.050103
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ampath King William's Town Depot",
+        "address": "Abuntu Mall Shop 4 and 5, King William's Town, South Africa",
+        "contact": "+27 43 642 2025",
+        "web": "https://www.ampath.co.za/covid-19-patients-resources",
+        "comment": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          27.387759,
+          -32.879914
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ampath Mthatha Laboratory",
+        "address": "30 Durham Street, Mthatha, South Africa",
+        "contact": "+27 47 505 6508",
+        "web": "https://www.ampath.co.za/covid-19-patients-resources",
+        "comment": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          28.785325,
+          -31.591450
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "Ampath Pickering Street Laboratory",
         "address": "13 Pickering Street, Newton Park, Port Elizabeth, South Africa",
         "contact": "+27 41 396 9513",
-        "web": "https://www.ampath.co.za/covid-19-collection-sites",
-        "comment": "Forms required - https://www.ampath.co.za/covid-19-patients-resources"
+        "web": "https://www.ampath.co.za/covid-19-patients-resources",
+        "comment": "Drive through collection site"
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
           25.571405,
-          -33.947491 
+          -33.947491
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ampath Queenstown Laboratory",
+        "address": "26 Ebdon Street, Queenstown, South Africa",
+        "contact": "+27 45 838 2332",
+        "web": "https://www.ampath.co.za/covid-19-patients-resources",
+        "comment": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          26.876314,
+          -31.896105
         ]
       }
     },
