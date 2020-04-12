@@ -398,7 +398,7 @@ var testsitesZAF =
         "name": "Polokwane Hospital",
         "address": "Dorp St, Hospital Park, Polokwane, 0699, SOuth Africa",
         "contact": "+27 15 287 5000",
-        "web": "",
+        "web": "-",
         "comment":"No appointment needed prior. Doctors Covid-19 test referral note is a requirement",
         "source": "https://sacoronavirus.co.za/contact/"
       },
@@ -508,5 +508,6 @@ var testsitesZAF =
         ]
       }
     },
+    // data from covid19za ends here:   
   ]
 }
