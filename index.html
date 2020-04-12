@@ -158,6 +158,7 @@
                 <p class="boxtext">
                     <a href="#" onclick="setLanguage('en')"><img src="img/US_flag.png" alt="English" width="64" height="45"></a>
                     <a href="#" onclick="setLanguage('cz')"><img src="img/CZ_flag.png" alt="Czech" width="64" height="45"></a>
+                    <a href="#" onclick="setLanguage( 'zulu')"><img src="img/SA_flag.png" alt="Zulu" width="64" height="45"></a>
                 </p>
             </div>
 
@@ -269,7 +270,6 @@
                 button: function() { alert('opened via JS callback') },
                 disabled: true,
             })
-
         // be notified when a panel is opened
         sidebar.on('content', function (ev) {
             switch (ev.id) {
