@@ -1,0 +1,62 @@
+﻿web-scraper-order,web-scraper-start-url,location-name,location-address-street,location-address-locality,location-address-region,location-address-postal-code,location-contact-phone-main,location-contact-url-main
+"1584764271-202","https://www.upmc.com/locations/community","UPMC Outpatient Center in Hampton","4490 Mount Royal Blvd.","Blvd.
+
+Allison Park","null","15101","null","https://www.google.com/maps/place/4490+Mt+Royal+Blvd,+Allison+Park,+PA+15101/@40.5834397,-79.9538974,17z/data=!3m1!4b1!4m5!3m4!1s0x88348dc7cb9691a5:0xe1379d32d17d2532!8m2!3d40.5834356!4d-79.9517087"
+"1584764271-210","https://www.upmc.com/locations/community","Bloomfield-Garfield","5475 Penn Ave.","Ave.
+
+Pittsburgh","null","15206","null","https://www.google.com/maps/place/5475+Penn+Ave,+Pittsburgh,+PA+15206/@40.4646179,-79.9354836,17z/data=!3m1!4b1!4m5!3m4!1s0x8834f26e89fadee7:0x15e310bf6f54c20f!8m2!3d40.4646138!4d-79.9332949"
+"1584764271-196","https://www.upmc.com/locations/community","UPMC Matilda Theiss Health Center","373 Burrows Street","Street
+
+Pittsburgh","null","15213","null","https://www.google.com/maps/place/UPMC+Matilda+H.+Theiss+Health+Center/@40.4419619,-79.9707495,19z/data=!4m13!1m7!3m6!1s0x8834f3d61b5d4cfd:0x30c76f5da57259fd!2s373+Burrows+St,+Pittsburgh,+PA+15213!3b1!8m2!3d40.4420893!4d-79.9703706!3m4!1s0x8834f3d43cb8685d:0x4e1c62bef3947e3d!8m2!3d40.442192!4d-79.9703629"
+"1584764271-206","https://www.upmc.com/locations/community","UPMC Outpatient Center at Westgate Plaza","2004 W. State St.","St.
+
+New Castle","null","16101","null","https://www.google.com/maps/place/2004+W+State+St,+New+Castle,+PA+16101/@41.0078756,-80.3780416,17.75z/data=!4m5!3m4!1s0x88338dcfe938b313:0x41fd22ee87fad582!8m2!3d41.0081117!4d-80.3775086"
+"1584764271-190","https://www.upmc.com/locations/community","Latterman Family Health Center","2347 Fifth Ave.","Ave.
+
+McKeesport","null","15132","null","https://www.google.com/maps/place/Latterman+Family+Health+Center/@40.3545655,-79.8372586,15z/data=!4m5!3m4!1s0x0:0x167f73f3ae2b2724!8m2!3d40.3545655!4d-79.8372586"
+"1584764271-195","https://www.upmc.com/locations/community","UPMC Digestive Health And Endoscopy Center","1000 Integrity Drive, Suite 110","110
+
+Pittsburgh","null","15235","null","https://www.google.com/maps/place/1000+Integrity+Dr,+Pittsburgh,+PA+15235/@40.4582907,-79.8266979,17z/data=!3m1!4b1!4m5!3m4!1s0x8834eb88baa9ba13:0xfc32397681d485d4!8m2!3d40.4582907!4d-79.8245092"
+"1584764271-197","https://www.upmc.com/locations/community","UPMC Mercy Green Tree","969 Greentree Road","Road
+
+Pittsburgh","null","15220","null","https://www.google.com/maps/place/UPMC+Mercy+Greentree/@40.4203928,-80.0471622,17z/data=!3m1!4b1!4m5!3m4!1s0x8834f6f6c4d512bb:0x5451faa3986238d0!8m2!3d40.4203887!4d-80.0449735"
+"1584764271-211","https://www.upmc.com/locations/community","UPMC St. Margaret Harmar Outpatient Center","3 Mariner Court","Court
+
+Pittsburgh","null","15238","null","https://www.google.com/maps/place/3+Mariner+Ct,+Pittsburgh,+PA+15238/@40.5374984,-79.8433738,17z/data=!3m1!4b1!4m5!3m4!1s0x8834936f60b17f5f:0xd52778ec053bf7cc!8m2!3d40.5374943!4d-79.8411851"
+"1584764271-201","https://www.upmc.com/locations/community","UPMC Outpatient Center in Ebensburg","152 Zeman Drive","Drive
+
+Ebensburg","null","15931","null","http://maps.upmc.com/findAddress.aspx?HUPMCLoc=UPMC Outpatient Center in Ebensburg&Hstreet=152 Zeman Drive&Hcity=Ebensburg&Hstate=PA&Hzip=15931&Hphone=814-471-2200"
+"1584764271-191","https://www.upmc.com/locations/community","UPMC Surgery Center at Daugherty Drive","125 Daugherty Drive","Monroeville","null","15146","null","https://www.google.com/maps/place/UPMC+Surgical+Center/@40.4362511,-79.7576821,17z/data=!3m1!4b1!4m5!3m4!1s0x8834ea3cef672ceb:0x8283cdddb9a27699!8m2!3d40.436247!4d-79.7554934"
+"1584764271-204","https://www.upmc.com/locations/community","null","UPMC Outpatient Center in Hermitage","Road
+
+Hermitage","null","16148","null","https://www.google.com/maps/place/Womancare+Center-UPMC+Horizon/@41.2449355,-80.4508389,15z/data=!4m2!3m1!1s0x0:0xca21224696a5de34?sa=X&hl=en&ved=2ahUKEwi1-fSH7IXmAhWkdd8KHbLZBZ4Q_BIwCnoECA4QCA"
+"1584764271-200","https://www.upmc.com/locations/community","UPMC Natrona Heights","UPMC Hillman Cancer Center","null","null","null","null","https://hillman.upmc.com/find/locations/natrona-heights-pa"
+"1584764271-209","https://www.upmc.com/locations/community","UPMC South Hills","1300 Oxford Dr.","Dr.
+
+Bethel Park","null","15102","null","https://www.google.com/maps/place/1300+Oxford+Dr,+Bethel+Park,+PA+15102/@40.3430909,-80.0506179,17z/data=!3m1!4b1!4m5!3m4!1s0x8834f9b468e60559:0xe26bb924974c6319!8m2!3d40.3430868!4d-80.0484292"
+"1584764271-205","https://www.upmc.com/locations/community","UPMC Outpatient Center in Hollidaysburg","800 S. Logan Blvd.","Blvd.
+
+Hollidaysburg","null","16648","null","https://www.google.com/maps/place/800+S+Logan+Blvd,+Hollidaysburg,+PA+16648/@40.4541842,-78.3975207,17z/data=!3m1!4b1!4m5!3m4!1s0x89cb9152ad618c0b:0x3edbe8d36b20fb79!8m2!3d40.4541801!4d-78.395332"
+"1584764271-207","https://www.upmc.com/locations/community","UPMC Outpatient Center in Wexford","12680 Perry Highway","Highway
+
+Wexford","null","15090","null","https://www.google.com/maps/place/12680+Perry+Hwy,+Wexford,+PA+15090/@40.6385829,-80.0655473,17z/data=!3m1!4b1!4m5!3m4!1s0x883489a4dfbe0675:0x137228b7e1aedcd3!8m2!3d40.6385788!4d-80.0633586"
+"1584764271-193","https://www.upmc.com/locations/community","Shea Medical Center","5200 Centre Ave.","Ave.
+
+Pittsburgh","null","15232","null","https://www.google.com/maps/place/316,+5200+Centre+Ave,+Pittsburgh,+PA+15232/@40.4545742,-79.9427887,17z/data=!3m1!4b1!4m5!3m4!1s0x8834f215ef5c3a13:0x540737fc8c3d44d7!8m2!3d40.4545742!4d-79.9406"
+"1584764271-198","https://www.upmc.com/locations/community","UPMC Mercy Health Center","1515 Locust Street","Street
+
+Pittsburgh","null","15219","null","https://www.google.com/maps/place/1515+Locust+St,+Pittsburgh,+PA+15219/@40.4371813,-79.986717,17z/data=!3m1!4b1!4m5!3m4!1s0x8834f1673bba8847:0xbf93a8072eb7ab62!8m2!3d40.4371772!4d-79.9845283"
+"1584764271-199","https://www.upmc.com/locations/community","UPMC South Side Outpatient Center","UPMC South Side Outpatient Center","null","null","null","null","https://goo.gl/maps/6aFTBpaMsPYuGqS69"
+"1584764271-212","https://www.upmc.com/locations/community","UPMC West Mifflin","UPMC Hillman Cancer Center","null","null","null","null","https://hillman.upmc.com/find/locations/west-mifflin-pa"
+"1584764271-203","https://www.upmc.com/locations/community","UPMC Outpatient Center in Heights Plaza","1800 Union Ave.","Ave.
+
+Natrona Heights","null","15065","null","https://www.google.com/maps/place/1800+Union+Ave,+Natrona+Heights,+PA+15065/@40.6230586,-79.7252622,17z/data=!3m1!4b1!4m5!3m4!1s0x8834bd75d8583337:0x427f0a474d85708b!8m2!3d40.6230545!4d-79.7230735"
+"1584764271-208","https://www.upmc.com/locations/community","UPMC Shadyside Family Health Center","5215 Centre Ave.","Ave.
+
+Pittsburgh","null","15232","null","https://www.google.com/maps/place/5215+Centre+Ave,+Pittsburgh,+PA+15232/@40.4555281,-79.9432753,17z/data=!3m1!4b1!4m5!3m4!1s0x8834f215f2df4ea1:0x3cad3eac668a21a7!8m2!3d40.455524!4d-79.9410866"
+"1584764271-192","https://www.upmc.com/locations/community","North Huntingdon Square Outpatient Clinic","Rte. 30","30
+
+Irwin","null","15642","null","https://www.google.com/maps/place/UPMC+Urgent+Care+-+North+Huntingdon/@40.3203439,-79.6935698,18z/data=!4m8!1m2!2m1!1sNorth+Huntingdon+Square+outpatient+clinic!3m4!1s0x8834dd242cb63e39:0x4347e33f1bd1e251!8m2!3d40.3214057!4d-79.69042"
+"1584764271-194","https://www.upmc.com/locations/community","Station Medical Center","1516 Ninth Ave.","Ave.
+
+Altoona","null","16602","null","https://www.google.com/maps/place/1516+9th+Ave,+Altoona,+PA+16601/@40.5122477,-78.4049525,17z/data=!3m1!4b1!4m5!3m4!1s0x89cb919467ad1171:0xe41fb1decc29b68f!8m2!3d40.5122436!4d-78.4027638"
