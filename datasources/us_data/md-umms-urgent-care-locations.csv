@@ -1,0 +1,45 @@
+﻿web-scraper-order,web-scraper-start-url,location-name,location-address-street,location-address-locality,location-address-region,location-address-postal-code,location-contact-phone-main,location-contact-url-main
+"1584759821-55","https://www.umms.org/locations?q=&serv=Urgent+Care&dist=&zip=&page=1&perpage=500&sort=Ascending&view=list#search","ChoiceOne Urgent Care - Phoenix","14237 Jarrettsville Pike","Pike
+										
+
+										Phoenix","MD","21131","410-650-4735","https://www.umms.org:443/sjmc/locations/choiceone-urgent-care-phoenix"
+"1584759821-56","https://www.umms.org/locations?q=&serv=Urgent+Care&dist=&zip=&page=1&perpage=500&sort=Ascending&view=list#search","ChoiceOne Urgent Care - Rotunda","711 West 40th Street","173										
+
+										Baltimore","MD","21211","443-961-1221","https://www.umms.org:443/sjmc/locations/choiceone-urgent-care-rotunda"
+"1584759821-51","https://www.umms.org/locations?q=&serv=Urgent+Care&dist=&zip=&page=1&perpage=500&sort=Ascending&view=list#search","ChoiceOne Urgent Care - Belvedere Square","600 East Belvedere Avenue","A										
+
+										Baltimore","MD","21212","410-296-0018","https://www.umms.org:443/sjmc/locations/choiceone-urgent-care-belvedere-square"
+"1584759821-59","https://www.umms.org/locations?q=&serv=Urgent+Care&dist=&zip=&page=1&perpage=500&sort=Ascending&view=list#search","ChoiceOne Urgent Care at Forest Hill","1528 Rock Spring Road","100										
+
+										Forest Hill","MD","21050","443-776-1131","https://www.umms.org:443/uch/locations/choiceone-urgent-care-forest-hill"
+"1584759821-60","https://www.umms.org/locations?q=&serv=Urgent+Care&dist=&zip=&page=1&perpage=500&sort=Ascending&view=list#search","UMaryland Immediate Care","408 W. Lombard Street","Street
+										
+
+										Baltimore","MD","21201","667-214-1899","https://www.umms.org:443/ummc/locations/umaryland-immediate-care"
+"1584759821-61","https://www.umms.org/locations?q=&serv=Urgent+Care&dist=&zip=&page=1&perpage=500&sort=Ascending&view=list#search","Urgent Care | UM Faculty Physicians, Inc.","5890 Waterloo Road","Road
+										
+
+										Columbia","MD","21045","667-214-2100","https://www.umms.org:443/ummc/locations/urgent-care-columbia"
+"1584759821-53","https://www.umms.org/locations?q=&serv=Urgent+Care&dist=&zip=&page=1&perpage=500&sort=Ascending&view=list#search","ChoiceOne Urgent Care - Dundalk","1730 Merritt Boulevard","Boulevard
+										
+
+										Dundalk","MD","21222","410-650-4730","https://www.umms.org:443/sjmc/locations/choiceone-urgent-care-dundalk"
+"1584759821-52","https://www.umms.org/locations?q=&serv=Urgent+Care&dist=&zip=&page=1&perpage=500&sort=Ascending&view=list#search","ChoiceOne Urgent Care - Denton","8 Denton Plaza","Plaza
+										
+
+										Denton","MD","21629","443-606-2300","https://www.umms.org:443/shore/locations/choiceone-urgent-care-denton"
+"1584759821-57","https://www.umms.org/locations?q=&serv=Urgent+Care&dist=&zip=&page=1&perpage=500&sort=Ascending&view=list#search","ChoiceOne Urgent Care at Aberdeen","744 S. Philadelphia Blvd","Blvd
+										
+
+										Aberdeen","MD","21001","443-345-2650","https://www.umms.org:443/uch/locations/choiceone-urgent-care-aberdeen"
+"1584759821-54","https://www.umms.org/locations?q=&serv=Urgent+Care&dist=&zip=&page=1&perpage=500&sort=Ascending&view=list#search","ChoiceOne Urgent Care - Easton","28522","Avenue
+										
+
+										Easton","MD","21601","443-746-0086","https://www.umms.org:443/shore/locations/choiceone-urgent-care-easton"
+"1584759821-58","https://www.umms.org/locations?q=&serv=Urgent+Care&dist=&zip=&page=1&perpage=500&sort=Ascending&view=list#search","ChoiceOne Urgent Care at Fallston","2315 Belair Road","1C										
+
+										Fallston","MD","21047","443-966-3900","https://www.umms.org:443/uch/locations/choiceone-urgent-care-fallston"
+"1584759821-62","https://www.umms.org/locations?q=&serv=Urgent+Care&dist=&zip=&page=1&perpage=500&sort=Ascending&view=list#search","Urgent Care University of Maryland - Downtown Campus","105 Penn Street","Street
+										
+
+										Baltimore","MD","21201","410-328-1660","https://www.umms.org:443/ummc/locations/university-maryland-urgent-care"
