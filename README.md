@@ -2,7 +2,7 @@
 
 [**Support our Gitcoin grant**](https://gitcoin.co/grants/700/covid-19-testing-facilities-map)
 
-## A COVID-19 Testing Facilities Map
+## Project Overview
 
 | Project name        | Cov19TestMap                                                 |
 | :------------------ | ------------------------------------------------------------ |
@@ -18,7 +18,7 @@
 
 ![Screenshot Map](img/screener_map.png)
 
-## Short description
+## Short Description
 
 There is no map displaying the facilities that offer COVID-19 tests. COVID-19 Testing Facilities Map is an attempt to create a map where those facilities can be mapped. The map serves two purposes:
 
