@@ -6,7 +6,7 @@
 
     <link rel="image_src" href="https://www.ineff.ch/cov19testmap/img/facilityicon.png" />
 
-    
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163208355-1"></script>
     <script>
@@ -68,7 +68,7 @@
                         style="float:right; margin-right: -11px; margin-top: -12px;"></a>
                 <br>
                 <h1><font color="red">WARNING</font></h1>
-                
+
                 <b>Always call your doctor first when you suspect a COVID-19 infection. Do not visit testing facilities without being told so by a health professional!</b>
                 <br><br>
                 <b>Disclaimer:</b> The information on this map is not accurate nor does it represent any medical or safety advice. This
@@ -88,16 +88,16 @@
 
     <!-- language packs -->
     <script>
-        var language; 
+        var language;
 
         function getLanguage() {
         (localStorage.getItem('language') == null) ? setLanguage('en') : false;
-        $.ajax({ 
-        url:  'language/' +  localStorage.getItem('language') + '.json', 
-        dataType: 'json', async: false, dataType: 'json', 
+        $.ajax({
+        url:  'language/' +  localStorage.getItem('language') + '.json',
+        dataType: 'json', async: false, dataType: 'json',
         success: function (lang) { language = lang } });
         }
-        
+
         function setLanguage(lang) {
             console.log(lang);
             localStorage.setItem('language', lang);
@@ -135,7 +135,7 @@
                 <h1 id="info_title" class="leaflet-sidebar-header">
                     <span class="leaflet-sidebar-close"><i class="fa fa-caret-left"></i></span>
                 </h1>
-                
+
                 <div id="info_welcome"></div>
                 <p id="info_iconlegend"></p>
                 <table style="width:100%">
@@ -147,7 +147,7 @@
                       <td width=50 ><img src="img/hospitalicon.png" alt="Health Facility Icon" width="32" height="32"></td>
                       <td id="info_icon2"></td>
                     </tr>
-                  </table> 
+                  </table>
 
 
                 <p id="info_para1" class="boxtext"></p>
@@ -156,9 +156,10 @@
                 <p id="info_para4" class="boxtext"></p>
                 <p id="info_languageTitle" class="boxtext"></p>
                 <p class="boxtext">
-                    <a href="#" onclick="setLanguage('en')"><img src="img/US_flag.png" alt="English" width="64" height="45"></a>
-                    <a href="#" onclick="setLanguage('cz')"><img src="img/CZ_flag.png" alt="Czech" width="64" height="45"></a>
-                    <a href="#" onclick="setLanguage( 'zulu')"><img src="img/SA_flag.png" alt="Zulu" width="64" height="45"></a>
+                    <a href="#" onclick="setLanguage('en')" class="flag-selector"><img src="img/US_flag.png" alt="English"></a>
+                    <a href="#" onclick="setLanguage('cz')" class="flag-selector"><img src="img/CZ_flag.png" alt="Czech"></a>
+                    <a href="#" onclick="setLanguage('pl')" class="flag-selector"><img src="img/PL_flag.png" alt="Polish"></a>
+                    <a href="#" onclick="setLanguage('zulu')" class="flag-selector"><img src="img/SA_flag.png" alt="Zulu"></a>
                 </p>
             </div>
 
@@ -195,14 +196,14 @@
 
     <div id="map"></div>
 
-    
+
 
     <!-- language packs -->
     <script>
 
         function reloadContent() {
             getLanguage();
-            
+
             // filling in the variable for the defined language
              for (x in language) {
                 if (x != "zoomto_data") {
@@ -418,7 +419,7 @@
         };
 
         var overlayMaps = {
-            'Testing Facilities': testsitesCrdSrc, 
+            'Testing Facilities': testsitesCrdSrc,
             'CHE Antibodytests': antibodysitesCHE,
             'CZE Testing Facilities': testsitesCZE,
             'ZAF Testing Facilities': testsitesZAF,

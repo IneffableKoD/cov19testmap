@@ -25,6 +25,13 @@
       width: 460px;
       max-width: 460px; } }
 
+/* FLAG SELECTOR */
+.leaflet-sidebar .flag-selector img{
+  border: 1px solid #cdcdcd;
+  height: 45px;
+  width: 64px;
+}
+
 .leaflet-sidebar-left {
   left: 0; }
   @media (min-width: 768px) {

@@ -1,0 +1,20 @@
+{
+    "zoomto_data": {
+        "lat": "52.5",
+        "lon": "18",
+        "zoomlevel": "7"
+    },
+    "info_title": "Informacje o COVID-19 obiektach testowych",
+    "info_welcome": "<h2>Witaj</h2><p>Mapa ta została utworzona w dwóch główych celach (ciągle ją tworzymy):</p><ul><li>Stworzeniu miejsca gdzie można będzie zebrac przyszłe testujące witryny internetowe/możliwości</li></ul>",
+    "info_iconlegend": "Legenda ikony",
+    "info_icon1": " = COVID-19 możliwości testowania",
+    "info_icon2": " = Niepotwierdzona instytucja medyczna",
+    "info_para1": "Bądź świadomy że wiekszość informacji tu dostepnych jest znaleziona przez autora badź przez tak zwany \"crowdsourcing\". Nie gwarantujemy rzetelności.",
+    "info_para2": "Całość danych ujętych na stronie, włączajac jej zródło to tak zwane otwarte oprogramowanie. Wszystkie informacje możesz znaleźć w serwisie hostingowym Github",
+    "info_para3": "Wielkie DZIĘKI dla wszystkich ktorzy przyczynili sie do powstania tego projektu czy to poprzez dostarczenie kodu czy crowdsourcingowe dostarczenie informacji o możliwości testowania!",
+    "info_para4": "Jeżeli chciałbyś wspomoc projekt, prosimy o wpisanie informacji na temat możliwości testowania w <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSfpChekpNXQyKVn9tOCvnQmEW5T_VMQmtV5cAVMucnCyJGDGw/viewform?usp=sf_link\">formularzu Google</a> lub poprzez wprowadzenie tak zwanego \"pull request\" czyli prośby o zaakceptowanie Twoich zmian.",
+    "info_languageTitle": "Wybierz język:",
+    "madeby_title": "Stworzone przez",
+    "madeby_created": "Ta mape stworzył CEVEN.hack – the <a href=\"https://www.ceven.tech/\">CEVEN</a> hackathon team.",
+    "madeby_contributors": "Głowny tworca i inicjator projektu tos <a href=\"http://ineff.ch/\">IneffableKoD</a> aka <a href=\"https://www.linkedin.com/in/yannickzehnder/\">Yannick Zehnnder</a>."
+}
