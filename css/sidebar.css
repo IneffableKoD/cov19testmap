@@ -25,8 +25,11 @@
       width: 460px;
       max-width: 460px; } }
 
+/* FLAG SELECTOR */
 .leaflet-sidebar .flag-selector img{
   border: 1px solid #cdcdcd;
+  height: 45px;
+  width: 64px;
 }
 
 .leaflet-sidebar-left {
