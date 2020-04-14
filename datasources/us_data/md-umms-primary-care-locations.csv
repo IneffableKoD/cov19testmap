@@ -1,0 +1,127 @@
+﻿web-scraper-order,web-scraper-start-url,location-name,location-address-street,location-address-locality,location-address-region,location-address-postal-code,location-contact-phone-main,location-contact-url-main
+"1584759956-65","https://www.umms.org/locations?page=1&perpage=50&q=&serv=Primary+Care%2fFamily+Medicine&dist=&zip=&view=list","St. Clare Medical Outreach","1407 York Rd","309										
+
+										Lutherville","MD","21093","410-427-5410","https://www.umms.org:443/sjmc/locations/st-clare-medical-outreach"
+"1584759956-96","https://www.umms.org/locations?page=1&perpage=50&q=&serv=Primary+Care%2fFamily+Medicine&dist=&zip=&view=list","University of Maryland Professional Building","419 W. Redwood Street","Street
+										
+
+										Baltimore","MD","21201","null","https://www.umms.org:443/ummc/locations/university-maryland-professional-building"
+"1584759956-93","https://www.umms.org/locations?page=1&perpage=50&q=&serv=Primary+Care%2fFamily+Medicine&dist=&zip=&view=list","UM SMG – Primary Care at Easton","500 Cadmus Lane","211										
+
+										Easton","MD","21601","410-820-4880","https://www.umms.org:443/shore/locations/smg-primary-care-easton"
+"1584759956-92","https://www.umms.org/locations?page=1&perpage=50&q=&serv=Primary+Care%2fFamily+Medicine&dist=&zip=&view=list","UM SMG – Primary Care at Denton","1140 Blades Farm Road","101										
+
+										Denton","MD","21629","410-479-5900","https://www.umms.org:443/shore/locations/smg-primary-care-denton"
+"1584759956-81","https://www.umms.org/locations?page=1&perpage=50&q=&serv=Primary+Care%2fFamily+Medicine&dist=&zip=&view=list","UM Harford Primary Care at W. MacPhail - Bel Air","615 W. MacPhail","office)										
+
+										Bel Air","MD","21014","410-638-8900","https://www.umms.org:443/uch/locations/harford-primary-care-macphail-rd"
+"1584759956-100","https://www.umms.org/locations?page=1&perpage=50&q=&serv=Primary+Care%2fFamily+Medicine&dist=&zip=&view=list","Urgent Care | UM Faculty Physicians, Inc.","5890 Waterloo Road","Road
+										
+
+										Columbia","MD","21045","667-214-2100","https://www.umms.org:443/ummc/locations/urgent-care-columbia"
+"1584759956-75","https://www.umms.org/locations?page=1&perpage=50&q=&serv=Primary+Care%2fFamily+Medicine&dist=&zip=&view=list","UM Capital Region Health Medical Group at Suitland","5001 Silver Hill Road","Floor										
+
+										Suitland","MD","20716","301-618-2273","https://www.umms.org:443/capital/locations/um-capital-region-medical-group-at-suitland"
+"1584759956-72","https://www.umms.org/locations?page=1&perpage=50&q=&serv=Primary+Care%2fFamily+Medicine&dist=&zip=&view=list","UM BWMG - Primary Care at Pasadena","3708 Mountain Road","Road
+										
+
+										Pasadena","MD","21122","410-553-2900","https://www.umms.org:443/bwmc/locations/bwmg-primary-care-pasadena"
+"1584759956-64","https://www.umms.org/locations?page=1&perpage=50&q=&serv=Primary+Care%2fFamily+Medicine&dist=&zip=&view=list","Midtown Health Center","822 Linden Avenue","Avenue
+										
+
+										Baltimore","MD","21201","410-856-3660","https://www.umms.org:443/midtown/locations/midtown-health-center"
+"1584759956-85","https://www.umms.org/locations?page=1&perpage=50&q=&serv=Primary+Care%2fFamily+Medicine&dist=&zip=&view=list","UM SJMG Internal Medicine - Suite 406","7505 Osler Drive","406										
+
+										Towson","MD","21204","410-427-2575","https://www.umms.org:443/sjmc/locations/um-sjmg-internal-medicine-406"
+"1584759956-86","https://www.umms.org/locations?page=1&perpage=50&q=&serv=Primary+Care%2fFamily+Medicine&dist=&zip=&view=list","UM SJMG Internal Medicine - Suite 411","7600 Osler Drive","411										
+
+										Towson","MD","21204","410-427-2550","https://www.umms.org:443/sjmc/locations/um-sjmg-internal-medicine-411"
+"1584759956-78","https://www.umms.org/locations?page=1&perpage=50&q=&serv=Primary+Care%2fFamily+Medicine&dist=&zip=&view=list","UM Harford Primary Care at Box Hill","3401 Box Hill Corporate Center Drive","100										
+
+										Abingdon","MD","21009","410-671-0017","https://www.umms.org:443/uch/locations/harford-primary-care-box-hill"
+"1584759956-69","https://www.umms.org/locations?page=1&perpage=50&q=&serv=Primary+Care%2fFamily+Medicine&dist=&zip=&view=list","UM BWMG - Primary Care at Glen Burnie","7845 Oakwood Road","204										
+
+										Glen Burnie","MD","21061","410-553-2900","https://www.umms.org:443/bwmc/locations/bwmg-primary-care-glen-burnie"
+"1584759956-68","https://www.umms.org/locations?page=1&perpage=50&q=&serv=Primary+Care%2fFamily+Medicine&dist=&zip=&view=list","UM BWMG - Adult and Senior Care at Pasadena","3708 Mountain Road","Pasadena","MD","21122","410-553-2900","https://www.umms.org:443/bwmc/locations/bwmg-adult-senior-care-pasadena"
+"1584759956-83","https://www.umms.org/locations?page=1&perpage=50&q=&serv=Primary+Care%2fFamily+Medicine&dist=&zip=&view=list","UM SJMG Dr. Timothy Herlihy","7505 Osler Drive","306										
+
+										Towson","MD","21204","410-427-5350","https://www.umms.org:443/sjmc/locations/um-sjmg-dr-timothy-herlihy"
+"1584759956-88","https://www.umms.org/locations?page=1&perpage=50&q=&serv=Primary+Care%2fFamily+Medicine&dist=&zip=&view=list","UM SJMG Nancy Bailowitz","7505 Osler Drive","512										
+
+										Towson","MD","21204","410-427-2227","https://www.umms.org:443/sjmc/locations/um-sjmg-nancy-bailowitz"
+"1584759956-67","https://www.umms.org/locations?page=1&perpage=50&q=&serv=Primary+Care%2fFamily+Medicine&dist=&zip=&view=list","UM BWMG - Adult and Senior Care at Millersville","8601 Veterans Highway","200										
+
+										Millersville","MD","21108","410-553-2900","https://www.umms.org:443/bwmc/locations/bwmg-adult-senior-care-millersville"
+"1584759956-66","https://www.umms.org/locations?page=1&perpage=50&q=&serv=Primary+Care%2fFamily+Medicine&dist=&zip=&view=list","UM Baltimore Washington Medical Center","301 Hospital Drive","Drive
+										
+
+										Glen Burnie","MD","21061","410-787-4000","https://www.umms.org:443/bwmc/locations/um-baltimore-washington-medical-center"
+"1584759956-90","https://www.umms.org/locations?page=1&perpage=50&q=&serv=Primary+Care%2fFamily+Medicine&dist=&zip=&view=list","UM SMG – Primary Care at Centreville","2540 Centreville Road","Road
+										
+
+										Centreville","MD","21617","410-758-4432","https://www.umms.org:443/shore/locations/smg-primary-care-centreville"
+"1584759956-74","https://www.umms.org/locations?page=1&perpage=50&q=&serv=Primary+Care%2fFamily+Medicine&dist=&zip=&view=list","UM Capital Region Health Medical Group at Laurel","7350 Van Dusen Road","350										
+
+										Laurel","MD","20707","null","https://www.umms.org:443/capital/locations/um-capital-region-medical-group-at-laurel"
+"1584759956-76","https://www.umms.org/locations?page=1&perpage=50&q=&serv=Primary+Care%2fFamily+Medicine&dist=&zip=&view=list","UM CRMG – Primary Care at La Plata","5 N. La Plata Court","101										
+
+										La Plata","MD","20646","301-609-5044","https://www.umms.org:443/charles/locations/crmg-primary-care-la-plata"
+"1584759956-99","https://www.umms.org/locations?page=1&perpage=50&q=&serv=Primary+Care%2fFamily+Medicine&dist=&zip=&view=list","Upper Chesapeake Primary Care at Havre de Grace","2027 Pulaski Hwy","203										
+
+										Havre de Grace","MD","21078","443-843-6262","https://www.umms.org:443/uch/locations/primary-care-havre-de-grace"
+"1584759956-63","https://www.umms.org/locations?page=1&perpage=50&q=&serv=Primary+Care%2fFamily+Medicine&dist=&zip=&view=list","James Frenkil Building at Eutaw Street","16 S. Eutaw Street","Street
+										
+
+										Baltimore","MD","21201","null","https://www.umms.org:443/ummc/locations/james-frenkil-building-eutaw-street"
+"1584759956-98","https://www.umms.org/locations?page=1&perpage=50&q=&serv=Primary+Care%2fFamily+Medicine&dist=&zip=&view=list","Upper Chesapeake Primary Care at Forest Hill","2 Colgate Dr.","103										
+
+										Forest Hill","MD","21050","410-420-0161","https://www.umms.org:443/uch/locations/upper-chesapeake-primary-care-forest-hill"
+"1584759956-73","https://www.umms.org/locations?page=1&perpage=50&q=&serv=Primary+Care%2fFamily+Medicine&dist=&zip=&view=list","UM Capital Region Health Medical Group at Cheverly","2900 Mercy Lane","Lane
+										
+
+										Cheverly","MD","20785","301-618-2273","https://www.umms.org:443/capital/locations/um-capital-region-health-medical-group-at-cheverly"
+"1584759956-95","https://www.umms.org/locations?page=1&perpage=50&q=&serv=Primary+Care%2fFamily+Medicine&dist=&zip=&view=list","University of Maryland Family & Community Medicine at Paca Street","29 S. Paca Street","Street
+										
+
+										Baltimore","MD","21201","667-214-1800","https://www.umms.org:443/ummc/locations/um-family-medicine-associates"
+"1584759956-87","https://www.umms.org/locations?page=1&perpage=50&q=&serv=Primary+Care%2fFamily+Medicine&dist=&zip=&view=list","UM SJMG Internal Medicine at Towson - Suite 402","7505 Osler Drive","402										
+
+										Towson","MD","21204","410-427-5330","https://www.umms.org:443/sjmc/locations/um-sjmg-internal-medicine-at-towson"
+"1584759956-71","https://www.umms.org/locations?page=1&perpage=50&q=&serv=Primary+Care%2fFamily+Medicine&dist=&zip=&view=list","UM BWMG - Primary Care at Millersville","8601 Veterans Highway","111										
+
+										Millersville","MD","21108","410-553-2900","https://www.umms.org:443/bwmc/locations/bwmg-primary-care-millersville"
+"1584759956-97","https://www.umms.org/locations?page=1&perpage=50&q=&serv=Primary+Care%2fFamily+Medicine&dist=&zip=&view=list","Upper Chesapeake Primary Care at Bel Air","520 Upper Chesapeake Drive","308										
+
+										Bel Air","MD","21014","443-643-4800","https://www.umms.org:443/uch/locations/primary-care-bel-air"
+"1584759956-80","https://www.umms.org/locations?page=1&perpage=50&q=&serv=Primary+Care%2fFamily+Medicine&dist=&zip=&view=list","UM Harford Primary Care at North Avenue at Bel Air","2 North Avenue","101										
+
+										Bel Air","MD","21014","410-838-6434","https://www.umms.org:443/uch/locations/harford-primary-care-north-avenue-bel-air"
+"1584759956-84","https://www.umms.org/locations?page=1&perpage=50&q=&serv=Primary+Care%2fFamily+Medicine&dist=&zip=&view=list","UM SJMG Health Park at Hereford","14 A Mt. Carmel Road","Road
+										
+
+										Parkton","MD","21120","443-491-3333","https://www.umms.org:443/sjmc/locations/um-sjmg-health-park-hereford"
+"1584759956-70","https://www.umms.org/locations?page=1&perpage=50&q=&serv=Primary+Care%2fFamily+Medicine&dist=&zip=&view=list","UM BWMG - Primary Care at Hanover","7556 Teague Road","450										
+
+										Hanover","MD","21076","410-553-2900","https://www.umms.org:443/bwmc/locations/bwmg-primary-care-hanover"
+"1584759956-79","https://www.umms.org/locations?page=1&perpage=50&q=&serv=Primary+Care%2fFamily+Medicine&dist=&zip=&view=list","UM Harford Primary Care at Havre de Grace","622 South Union Ave","Ave
+										
+
+										Havre de Grace","MD","21078","410-638-8900","https://www.umms.org:443/uch/locations/harford-primary-care-havre-de-grace"
+"1584759956-94","https://www.umms.org/locations?page=1&perpage=50&q=&serv=Primary+Care%2fFamily+Medicine&dist=&zip=&view=list","UM SMG – Primary Care at Galena","119 C North Main Street","Street
+										
+
+										Galena","MD","21635","410-648-5150","https://www.umms.org:443/shore/locations/smg-primary-care-galena"
+"1584759956-82","https://www.umms.org/locations?page=1&perpage=50&q=&serv=Primary+Care%2fFamily+Medicine&dist=&zip=&view=list","UM Shore Medical Pavilion at Easton","490 Cadmus Lane","Lane
+										
+
+										Easton","MD","21601","410-822-1000","https://www.umms.org:443/shore/locations/medical-pavilion-easton"
+"1584759956-77","https://www.umms.org/locations?page=1&perpage=50&q=&serv=Primary+Care%2fFamily+Medicine&dist=&zip=&view=list","UM Faculty Physicians, Inc | 5890 Waterloo Crossing","5890 Waterloo Road","Road
+										
+
+										Columbia","MD","21045","667-214-2100","https://www.umms.org:443/ummc/locations/fpi-5890-waterloo-crossing"
+"1584759956-89","https://www.umms.org/locations?page=1&perpage=50&q=&serv=Primary+Care%2fFamily+Medicine&dist=&zip=&view=list","UM SJMG Towson Medical Associates","7801 York Road","102										
+
+										Towson","MD","21204","410-769-4920","https://www.umms.org:443/sjmc/locations/um-sjmg-towson-medical-associates"
+"1584759956-91","https://www.umms.org/locations?page=1&perpage=50&q=&serv=Primary+Care%2fFamily+Medicine&dist=&zip=&view=list","UM SMG – Primary Care at Chestertown","126 Philosophers Terrace","102										
+
+										Chestertown","MD","21620","410-778-1878","https://www.umms.org:443/shore/locations/smg-primary-care-chestertown"
