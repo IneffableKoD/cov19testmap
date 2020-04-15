@@ -7,7 +7,7 @@
 | Title               | A COVID-19 Testing Facilities Map                            |
 | Product demo        | http://ineff.ch/cov19testmap/                                |
 | Demo video          | https://www.youtube.com/watch?v=6Rj032PXzMc                  |
-| Demo video          | https://www.ineff.ch/2020-04-03-The-COVID-19-Testing-Facility-Map/                  |
+| Blog post          | https://www.ineff.ch/2020-04-03-The-COVID-19-Testing-Facility-Map/                  |
 | Dissemination level | Public                                                       |
 | Version             | 0.4                                                          |
 | Text license        | This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License |
