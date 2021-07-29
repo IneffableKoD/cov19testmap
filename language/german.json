@@ -1,0 +1,20 @@
+{ 
+    "zoomto_data": {
+        "lat": "23",
+        "lon": "-42",
+        "zoomlevel": "3"
+    },
+    "info_title": "Informationen zu COVID-19-Testeinrichtungen",
+    "info_welcome": "<h2>Willkommen</h2><p>Diese Karte wurde für zwei Hauptzwecke erstellt (wird noch erforscht):</p><ul><li>Verbraucherinformationen darüber, wo Sie sich auf COVID-19 testen lassen (normalerweise nach einem Screening-Anruf)</li><li>Bereitstellung eines Tools zur Planung weiterer Teststandorte/-einrichtungen</li></ul>",
+    "info_iconlegend": "Symbollegende:",
+    "info_icon1": " = COVID-19-Testeinrichtung",
+    "info_icon2": " = Unbestätigte medizinische Einrichtung",
+    "info_para1": "Bitte beachten Sie, dass die meisten Informationen hier entweder vom Autor gefunden oder über Crowdsourcing bereitgestellt werden. Wir garantieren keine Genauigkeit.",
+    "info_para2": "Alle Daten auf dieser Seite, einschließlich der Seitenquelle, sind Open Source. Alle Informationen finden Sie auf der <a href=\"https://github.com/IneffableKoD/cov19testmap\">GitHub repository</a>.",
+    "info_para3": "Ein großes DANKESCHÖN geht an alle, die zu diesem Projekt beigetragen haben, entweder durch Bereitstellung von Code oder Crowdsourcing-Testeinrichtungen!",
+    "info_para4": "Wenn Sie einen Beitrag leisten möchten, können Sie gerne Testeinrichtungen in der<a href=\"https://docs.google.com/forms/d/e/1FAIpQLSfpChekpNXQyKVn9tOCvnQmEW5T_VMQmtV5cAVMucnCyJGDGw/viewform?usp=sf_link\">Google-Formular</a> oder per Pull-Request.",
+    "info_languageTitle": "Sprache auswählen:",
+    "madeby_title": "Hergestellt von",
+    "madeby_created": "Diese Karte wurde erstellt von CEVEN.hack – das <a href=\"https://www.ceven.tech/\">CEVEN</a> hackathon team.",
+    "madeby_contributors": "Hauptbeitragender und Projektinitiator ist <a href=\"http://ineff.ch/\">IneffableKoD</a> auch bekannt <a href=\"https://www.linkedin.com/in/yannickzehnder/\">Yannick Zehnnder</a>."
+}
