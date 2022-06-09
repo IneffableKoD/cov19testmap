@@ -5,9 +5,9 @@
 | Project name        | Cov19TestMap                                                 |
 | :------------------ | ------------------------------------------------------------ |
 | Title               | A COVID-19 Testing Facilities Map                            |
-| Product demo        | http://ineff.ch/cov19testmap/                                |
+| Product demo        | —                                |
 | Demo video          | https://www.youtube.com/watch?v=6Rj032PXzMc                  |
-| Blog post          | https://www.ineff.ch/2020-04-03-The-COVID-19-Testing-Facility-Map/                  |
+| Blog post          | —                 |
 | Dissemination level | Public                                                       |
 | Version             | 0.4                                                          |
 | Text license        | This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License |
